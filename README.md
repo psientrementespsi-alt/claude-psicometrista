@@ -29,7 +29,7 @@ Veja `INSTALAR.md` para o passo a passo completo (computador e conta).
 
 - Dados de participantes e qualquer base real (os testes usam só dados simulados ou públicos).
 - Livros e artigos em PDF e o material de cursos: têm copyright. As skills os citam por nome e DOI.
-- Os 22 repositórios clonados: ficam pinados em `repositorios_clonados.csv` em vez de copiados (cerca de 570 MB).
+- Os 22 repositórios clonados entram como submódulos (links presos no commit exato), não como cópia. O código-fonte dos pacotes R está na Release do repositório.
 
 ## Segurança dos dados
 

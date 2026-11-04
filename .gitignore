@@ -5,4 +5,3 @@
 *.csv.gz
 !dependencias/*.csv
 dados/
-repositorios/

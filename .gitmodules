@@ -1,0 +1,66 @@
+[submodule "repositorios/higiene-dados/06_diagnostico_e_dicionarios_metadados/dlookr"]
+	path = repositorios/higiene-dados/06_diagnostico_e_dicionarios_metadados/dlookr
+	url = https://github.com/choonghyunryu/dlookr.git
+[submodule "repositorios/higiene-dados/06_diagnostico_e_dicionarios_metadados/codebook"]
+	path = repositorios/higiene-dados/06_diagnostico_e_dicionarios_metadados/codebook
+	url = https://github.com/rubenarslan/codebook.git
+[submodule "repositorios/higiene-dados/01_limpeza_e_sanitizacao_geral/datawizard"]
+	path = repositorios/higiene-dados/01_limpeza_e_sanitizacao_geral/datawizard
+	url = https://github.com/easystats/datawizard.git
+[submodule "repositorios/higiene-dados/01_limpeza_e_sanitizacao_geral/skimr"]
+	path = repositorios/higiene-dados/01_limpeza_e_sanitizacao_geral/skimr
+	url = https://github.com/ropensci/skimr.git
+[submodule "repositorios/higiene-dados/01_limpeza_e_sanitizacao_geral/janitor"]
+	path = repositorios/higiene-dados/01_limpeza_e_sanitizacao_geral/janitor
+	url = https://github.com/sfirke/janitor.git
+[submodule "repositorios/higiene-dados/05_dados_ausentes_e_imputacao/simputation"]
+	path = repositorios/higiene-dados/05_dados_ausentes_e_imputacao/simputation
+	url = https://github.com/markvanderloo/simputation.git
+[submodule "repositorios/higiene-dados/05_dados_ausentes_e_imputacao/naniar"]
+	path = repositorios/higiene-dados/05_dados_ausentes_e_imputacao/naniar
+	url = https://github.com/njtierney/naniar.git
+[submodule "repositorios/higiene-dados/05_dados_ausentes_e_imputacao/mice"]
+	path = repositorios/higiene-dados/05_dados_ausentes_e_imputacao/mice
+	url = https://github.com/amices/mice.git
+[submodule "repositorios/higiene-dados/04_triagem_comportamental_e_careless/careless"]
+	path = repositorios/higiene-dados/04_triagem_comportamental_e_careless/careless
+	url = https://github.com/ryentes/careless.git
+[submodule "repositorios/higiene-dados/03_rastreamento_e_auditoria_logs/tidylog"]
+	path = repositorios/higiene-dados/03_rastreamento_e_auditoria_logs/tidylog
+	url = https://github.com/elbersb/tidylog.git
+[submodule "repositorios/higiene-dados/03_rastreamento_e_auditoria_logs/lumberjack"]
+	path = repositorios/higiene-dados/03_rastreamento_e_auditoria_logs/lumberjack
+	url = https://github.com/markvanderloo/lumberjack.git
+[submodule "repositorios/higiene-dados/02_validacao_integridade_e_qualidade/validate"]
+	path = repositorios/higiene-dados/02_validacao_integridade_e_qualidade/validate
+	url = https://github.com/data-cleaning/validate.git
+[submodule "repositorios/higiene-dados/02_validacao_integridade_e_qualidade/assertr"]
+	path = repositorios/higiene-dados/02_validacao_integridade_e_qualidade/assertr
+	url = https://github.com/tonyfischetti/assertr.git
+[submodule "repositorios/higiene-dados/02_validacao_integridade_e_qualidade/pointblank"]
+	path = repositorios/higiene-dados/02_validacao_integridade_e_qualidade/pointblank
+	url = https://github.com/rstudio/pointblank.git
+[submodule "repositorios/relato-estatistico/papaja"]
+	path = repositorios/relato-estatistico/papaja
+	url = https://github.com/crsh/papaja.git
+[submodule "repositorios/relato-estatistico/modelsummary"]
+	path = repositorios/relato-estatistico/modelsummary
+	url = https://github.com/vincentarelbundock/modelsummary.git
+[submodule "repositorios/relato-estatistico/apaTables"]
+	path = repositorios/relato-estatistico/apaTables
+	url = https://github.com/dstanley4/apaTables.git
+[submodule "repositorios/relato-estatistico/equatiomatic"]
+	path = repositorios/relato-estatistico/equatiomatic
+	url = https://github.com/datalorax/equatiomatic.git
+[submodule "repositorios/relato-estatistico/statcheck"]
+	path = repositorios/relato-estatistico/statcheck
+	url = https://github.com/MicheleNuijten/statcheck.git
+[submodule "repositorios/relato-estatistico/report"]
+	path = repositorios/relato-estatistico/report
+	url = https://github.com/easystats/report.git
+[submodule "repositorios/relato-estatistico/gtsummary"]
+	path = repositorios/relato-estatistico/gtsummary
+	url = https://github.com/ddsjoberg/gtsummary.git
+[submodule "repositorios/relato-estatistico/rempsyc"]
+	path = repositorios/relato-estatistico/rempsyc
+	url = https://github.com/rempsyc/rempsyc.git
