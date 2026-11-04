@@ -10,14 +10,41 @@ Três skills do Claude para análise psicométrica e estatística em psicologia,
 
 > Versão para compartilhar. Foram retiradas as referências ao curso original, os caminhos do computador do autor e os testes que dependem de bases de terceiros. As menções a outras skills do autor (fabrica-de-artigo, verificacao-artigo e semelhantes) podem ser ignoradas.
 
-## Como usar
+## Instalação rápida
 
-Veja `INSTALAR.md` para o passo a passo completo (computador e conta).
+**No computador (Claude Code).** Precisa do [R](https://cloud.r-project.org) instalado. No Terminal:
 
-1. Copie as pastas de `skills/` para `~/.claude/skills/` (Claude Code) ou carregue-as como skills na sua conta.
-2. Instale os pacotes R: `Rscript dependencias/instalar_pacotes.R`.
-3. Opcional, para reproduzir tudo: `sh dependencias/baixar_repositorios.sh repositorios` (clona os 22 repositórios open source de referência, cada um no commit exato).
-4. Rode os testes: `sh testes/rodar_todos.sh`. A última execução está em `testes/ultima_execucao.md`.
+```bash
+git clone https://github.com/psientrementespsi-alt/claude-psicometrista.git
+cd claude-psicometrista
+sh instalar.sh
+```
+
+O `instalar.sh` copia as três skills para `~/.claude/skills/` e instala os pacotes R.
+
+**Na conta Claude (navegador e app).** Baixe os três arquivos da pasta [`dist/`](dist) (`psicometria-r.zip`, `higiene-dados.zip`, `relato-estatistico.zip`) e envie cada um na área de Skills das configurações.
+
+**Para a `psicometria-r` rodar o R no seu computador**, configure o servidor `r-btw` no Claude Desktop. O passo a passo está em [`INSTALAR.md`](INSTALAR.md).
+
+### Opcional: trazer tudo para o computador
+
+Os 22 repositórios open source de referência (submódulos, presos nos commits exatos):
+
+```bash
+git submodule update --init --recursive
+```
+
+O código-fonte dos pacotes R, sem depender do CRAN (baixa 355 MB da [Release](https://github.com/psientrementespsi-alt/claude-psicometrista/releases/tag/pacotes-r-2026-11-04) e compila, de 30 a 60 minutos):
+
+```bash
+sh instalar_offline.sh
+```
+
+### Conferir que funcionou
+
+```bash
+sh testes/rodar_todos.sh
+```
 
 ## O que há aqui
 
