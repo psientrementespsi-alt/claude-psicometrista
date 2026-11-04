@@ -1,0 +1,173 @@
+Registered S3 method overwritten by 'car':
+  method           from
+  na.action.merMod lme4
+== GLM
+PASSOU  âncora curso: Wald χ²(2) = 32,27 com escala ML do SPSS (tol .02)
+PASSOU  âncora curso: AIC normal-identidade = 286,27 (tol .01)
+PASSOU  âncora curso: β Salina = 112,65 e β AP5 IPSI = 133,25 contra AP5 CONT (tol .005)
+PASSOU  âncora curso: EP das médias marginais 18,04 (n 8) e 16,14 (n 10) (tol .005)
+PASSOU  com o 75,25 impresso no curso o Wald seria 31,76 (confirma o erro de digitação)
+PASSOU  frase APA usa Wald χ²(gl) com um só gl, nunca 'Wald (2, 23)'
+PASSOU  decimal = ',' troca o separador na frase
+PASSOU  equivalência: Wald Tipo III (escala Pearson) = car::Anova(glm, type = 3, Wald) (tol 1e-6)
+PASSOU  equivalência: coluna F (normal) = ANOVA Tipo III de car::Anova(lm) também com escala ML (tol 1e-6)
+PASSOU  Bonferroni: p ajustado = min(1, 3 × p sem correção) (tol 1e-8)
+PASSOU  verdade conhecida (logística): IC do OR de x cobre 2 e coeficientes = glm() (tol 1e-8)
+PASSOU  verdade conhecida (Poisson): IRR cobre 1,5 e não acusa superdispersão (p > .01)
+PASSOU  verdade conhecida: contagem superdispersa ajustada como Poisson acusa (p < .001) e recomenda binomial negativa
+PASSOU  verdade conhecida (binomial negativa): IRR cobre 1,5 e θ estimado perto de 1,5 (± .5)
+PASSOU  verdade conhecida (gama, ligação log com preditor contínuo): razão de médias cobre 1,3 e φ_ML perto de 1/4 (± .04)
+PASSOU  comparar_familias: gama (verdadeira) com AIC menor que normal no mesmo Y
+PASSOU  comparar_familias avisa que AIC entre contínua e discreta não é comparável
+PASSOU  gama recusa desfecho com zero e explica que somar constante muda o modelo
+== Grupo gravado como número (regressão da revisão CoVe)
+PASSOU  GLM: grupo 1/2/3 numérico avisa que entra como contínuo (1 gl) e sugere fatores =
+PASSOU  GLM: com fatores = 'grupo', Wald χ²(2) igual ao de factor(grupo) (tol 1e-8) e sem o aviso
+PASSOU  GLM: decisões só falam em categoria de referência quando há fator
+PASSOU  livro (md5:57): dose gravada como número entra como contínua e a função avisa
+PASSOU  âncora livro (md5:414): libido por dose com fatores = 'dose', F(2, 27) = 2,416, p = ,108 (tol .0005)
+PASSOU  âncora livro (md5:77): ANCOVA dose F(2, 26) = 4,142 e covariável F(1, 26) = 4,959 (tol .0005)
+PASSOU  H-10: Viagra na mesma métrica, Wald χ² (3,89, p .049 contra 5,37, p .068) e F (3,63, p .067 contra 2,416, p .108) = lm() (tol 1e-8)
+== GEE
+PASSOU  equivalência: GEE independente = glm() nos coeficientes (tol 1e-6)
+PASSOU  equivalência: EP robusto (independente) = sandwich::vcovCL HC0 por sujeito (tol rel. 1e-6)
+PASSOU  equivalência: Mancl e DeRouen (independente, normal) × (G - 1)/G = sandwich::vcovCL HC3 (tol rel. 1e-6)
+PASSOU  equivalência: sanduíche recalculado = geepack (intercambiável, AR(1) e não estruturada, com tempos faltando) (tol rel. 1e-6)
+PASSOU  não estruturada com tempos faltando no meio roda (sem segfault) e estima 6 correlações para 4 tempos
+PASSOU  verdade conhecida: correlação intercambiável estimada perto de .50 (± .07)
+PASSOU  verdade conhecida: efeito de grupo (0,5) e de tempo 4 vs 1 (0,9) dentro do IC 95%
+PASSOU  frase APA do GEE com Wald χ²(gl) e sem a forma 'Wald (1, 24)'
+PASSOU  comparar_correlacoes_gee: com covariável que varia no tempo, QIC e CIC da intercambiável (verdadeira) menores que os da independência
+PASSOU  2 tempos: intercambiável, AR(1) e não estruturada dão o mesmo QIC (tol 1e-3) e a função avisa
+PASSOU  equivalência: QIC (Poisson, escala fixa em 1) = geepack::QIC (tol 1e-6)
+  info: quasi-verossimilhança da gama, geepack::QIC = -209.521; -y/mu - log(mu) = -223.475
+  info: erro tipo I nominal .05 com 12 clusters: robusto 0.095; Mancl-DeRouen 0.050
+PASSOU  verdade conhecida: com 12 clusters o EP robusto infla o erro tipo I e Mancl-DeRouen reduz
+PASSOU  com menos de 40 sujeitos a função avisa e traz o p com Mancl-DeRouen ao lado
+PASSOU  GEE avisa MCAR quando há linhas excluídas
+PASSOU  GEE: grupo numérico avisa (tempo não, que já vira fator); com fatores = 'g3' o termo tem 2 gl
+== Multinível linear (âncora do curso: mlmRev::Exam)
+PASSOU  âncora curso (reporte): ICC do nulo em ML = .166 (tol .0005)
+PASSOU  âncora curso (prática no JASP): ICC em REML = .168, τ00 = .172, σ² = .848 (tol .0005)
+PASSOU  âncora curso: M1 standLRT = .559 (tol .001; o curso trunca .5595) e sexo M = -.171 (tol .0005)
+PASSOU  âncora curso: Δ-2LL M1 vs M0 = 1680,6 com Δgl = 2 (tol .05)
+PASSOU  âncora curso: M2 schavg = .348, boys = .194, girls = .151 (tol .0005); Δ-2LL = 14,7 (tol .05), Δgl = 3
+PASSOU  âncora curso: M3 Var(u1j) = .015, DP = .122 (tol .0005), r intercepto-inclinação = .48 (tol .005)
+PASSOU  âncora curso: inclinação média .549 (tol .001) e faixa de 68% de .427 a .672 (tol .0005)
+PASSOU  âncora curso (com ressalva): Δ-2LL M3 vs M2 = 40,2 (curso 40,199; R 40,18; tol .03), Δgl = 2
+PASSOU  âncora curso: M4 interações boys×standLRT = -.016 e girls×standLRT = -.021 (tol .0005); Δ-2LL = 0,2 (tol .05), p = .89 (tol .005)
+PASSOU  modelo final automático = M3 (M4 não melhora), como no curso
+PASSOU  âncora curso (prática no JASP): standLRT sem sexo = .563 (tol .0005)
+PASSOU  âncora curso (prática no JASP): schavg = .343 com standLRT e sexo (tol .0005)
+PASSOU  desvio = -2 logLik (positivo; o checklist do curso tem erro de sinal) e = deviance() do lme4 (tol 1e-6)
+PASSOU  equivalência: p do LRT = anova() do lme4 (tol 1e-8) e mistura de χ² menor que o p ingênuo
+PASSOU  equivalência: R² de Nakagawa = performance::r2_nakagawa, intercepto aleatório e inclinação aleatória (tol 1e-4)
+PASSOU  equivalência: ICC do nulo = performance::icc (tol 1e-8)
+PASSOU  estimativas finais em REML com gl de Satterthwaite = lmerTest (tol 1e-8)
+PASSOU  decisões registram a inversão M2/M3 da página 'Ajuste' e o erro de sinal do desvio
+PASSOU  multinível: nível 2 gravado como número avisa; com fatores reproduz boys .194 e girls .151 do curso (tol .0005)
+PASSOU  multinível: inclinação aleatória de preditor categórico para na entrada com mensagem clara
+== Multinível: verdade conhecida e centralização
+PASSOU  verdade conhecida: ICC = .25 recuperado (± .08) e efeito de desenho = 1 + 19 × ICC
+PASSOU  centralizar_multinivel: X_cwc com média zero em cada cluster e média do cluster constante no cluster
+PASSOU  centralizar_multinivel recusa centralizar no grupo uma variável de nível 2
+PASSOU  centralizar_multinivel na média geral: nível 2 centrado na média entre clusters
+PASSOU  centralizar_multinivel: padrão = média geral (curso), com a alternativa CWC criada ao lado para o nível 1
+PASSOU  centralizar_multinivel: devolve invisível e o print mostra só agregados (nenhuma linha de participante)
+PASSOU  centralizar_multinivel: o objeto serve de banco para multinivel_linear
+PASSOU  verdade conhecida: γ10 = .5 e γ01 = .3 dentro do IC 95% do modelo final (M3)
+PASSOU  verdade conhecida: variância da inclinação (.04) recuperada entre .015 e .08
+PASSOU  multinivel_linear recusa preditor de nível 2 que varia dentro do cluster
+== Multinível logístico
+PASSOU  verdade conhecida: ICC latente = 1/(1 + π²/3) = .233 recuperado (± .05)
+PASSOU  verdade conhecida: OR condicional de x = exp(.7) dentro do IC 95%
+PASSOU  equivalência: R² de Nakagawa (logística, π²/3) = performance::r2_nakagawa (tol 1e-4)
+PASSOU  logística multinível declara OR condicionais ao cluster
+PASSOU  logística multinível: nível 2 gravado como número (1/2/3) avisa e sugere fatores =
+PASSOU  logística multinível: preditor de 2 valores (1/2) não avisa (mesma regra da associação)
+PASSOU  nAGQ > 1: o LRT do M3 usa o M2 reajustado por Laplace (Δ-2LL = 3,52; tol 1e-3) e a decisão registra
+== Meta-análise (âncoras do curso)
+PASSOU  âncora curso: DM 1,19 / 2,49 / 1,84 e variâncias .141 / .276 / .279 (tol .0005)
+PASSOU  âncora curso: REML DM = 1,7713 [1,0013; 2,5414], τ² = .2407, z = 4,51 (tol meia última casa)
+PASSOU  âncora curso: Q = 4,17 (gl 2, p = .1244), I² = 52,0% pela fórmula (Q - gl)/Q (tol meia última casa)
+PASSOU  âncora curso: τ² e DM pelos 8 estimadores (HS, ML, HE, PM, EB, REML, DL, SJ) (tol 5e-5)
+PASSOU  âncora curso: IC de PM [1,0176; 2,5170], DL [1,0003; 2,5428] e SJ [0,9989; 2,5449] (tol 5e-5)
+PASSOU  âncora curso: efeito comum DM = 1,68 [1,16; 2,20], z = 6,36 (tol .005)
+PASSOU  âncora curso: IC por estudo (Cho [0,45; 1,93]) e pesos comum 49,6/25,3/25,1 e aleatório 40,4/29,9/29,7 (tol .05)
+PASSOU  com 3 estudos: avisa τ² impreciso e não roda testes de assimetria
+PASSOU  âncora curso (BCG): RR = .49 [.34; .70], τ² = .3132, I² = 92,1% (tol meia última casa)
+PASSOU  equivalência (documentação do metafor, dat.bcg): log RR = -.7145, EP = .1798, Q = 152,2330, I² (τ²) = 92,22% (tol meia última casa)
+PASSOU  âncora curso: subgrupos de alocação (RR e IC, tol .005; I², tol .05)
+PASSOU  âncora curso: teste entre subgrupos χ² = 1,86, gl = 2, p = .3943 (tol meia última casa)
+PASSOU  âncora curso: meta-regressão em latitude B = -.0291, EP .0072, z = -4,0444, IC [-.0432; -.0150] (tol meia última casa)
+PASSOU  âncora curso: τ² residual .0764, I² 68,39%, R² 75,62%, QE(11) = 30,7331, QM(1) = 16,3571 (tol meia última casa)
+PASSOU  âncora curso: RR cai cerca de 2,9% por grau de latitude (1 - exp(-.0291) = .0287)
+PASSOU  âncora curso: alocação QM(2) = 1,7675, p = .4132, R² = 0%, τ² residual = .3615, I² = 88,77%
+PASSOU  âncora curso: latitude + alocação QM(3) = 11,0605, R² = 53,84%, latitude B = -.0273 (EP .0092, z = -2,9650)
+PASSOU  13 estudos: roda Peters (RR) como teste principal de assimetria e trim-and-fill só como sensibilidade
+== Meta-análise: equivalência e verdade conhecida
+PASSOU  equivalência: g de Hedges com correção exata e variância 1/n1 + 1/n2 + g²/(2(n1+n2)) (tol 1e-10)
+PASSOU  verdade conhecida: g combinado = .40 (± .08), intervalo de predição cobre .40, τ² < .12
+PASSOU  equivalência: Egger = intercepto da regressão de y/EP em 1/EP (Egger et al., 1997) (tol 1e-8)
+PASSOU  SMD: leitura principal de assimetria pela regressão em 1/√n, com aviso sobre o Egger
+PASSOU  equivalência: z de Fisher = atanh(r), vi = 1/(n - 3) e síntese volta para r (tanh) sem zero à esquerda na frase
+PASSOU  equivalência: log OR = log(ad/bc) e vi = 1/a + 1/b + 1/c + 1/d (tol 1e-10)
+PASSOU  verdade conhecida: sem efeito de estudos pequenos, Peters e Harbord não rejeitam (p > .01)
+PASSOU  verdade conhecida: com seleção dos estudos pequenos significativos, Peters e Harbord detectam assimetria (p < .05)
+PASSOU  Hartung-Knapp como principal: estatística t com gl = k - 1
+PASSOU  meta-regressão avisa menos de 10 estudos por covariável
+PASSOU  meta-regressão com permutação (semente 2026) devolve p de permutação
+== Meta-análise: correções da revisão CoVe
+PASSOU  intervalo de predição com t(k - 2) (Riley et al., 2011): k = 5 dá [-0,51; 1,29] = predict(predtype = 'Riley') (tol 1e-8)
+PASSOU  intervalo de predição do BCG com t(11): RR de .13 a 1,78 (tol .005) e frase APA com o mesmo intervalo
+PASSOU  Peters et al. (2006): regressão em 1/N com pesos S·F/N; BCG OR t(11) = -1,362, p = ,2003 (tol 1e-6)
+PASSOU  equivalência: Peters = meta::metabias(method.bias = 'Peters') (tol 1e-6)
+PASSOU  metodo = 'EE': frase diz efeito comum, sem 'efeitos aleatórios', sem intervalo de predição nem NA
+PASSOU  subgrupos com Hartung-Knapp avisam que o Q entre fica mais liberal
+PASSOU  meta-regressão: moderador numérico com poucos valores avisa e sugere fatores =
+== Correções da verificação final (F3, H-01, G-11)
+PASSOU  F3 meta_analise(nivel = .90): 'IC 90% [0.29, 0.58]' = metafor::rma(level = 90) [.288; .579], sem 'IC 95%'; em inglês '90% CI'
+PASSOU  F3 meta_subgrupos(nivel = .90): 'A (k = 4): efeito = 0.32, IC 90% [0.19, 0.45]' = metafor::rma(level = 90) do subgrupo
+PASSOU  F3 modelo_gee(nivel = .90): 'c - t: diferença = -0.28, IC 90% [-0.54, -0.02], p = .076' (geepack: -0,281 ± 1,645 × 0,159)
+PASSOU  F3 modelo_glm(Poisson, nivel = .90): par c / t com 'IC 90%' e limites = exp(-b ± 1,645 EP) do glm()
+PASSOU  H-01 GLM: nível com 1 caso fica no objeto (média 97,531, n = 1; n = 30 nos outros) e sai do print e da frase, com aviso
+PASSOU  H-01 GLM Poisson: média marginal do nível de 1 caso (contagem 17) no objeto e linha do print sem valores
+PASSOU  H-01 GEE: grupo de 1 sujeito, média marginal 93,456 (média das 3 medidas) e n = 1 sujeito no objeto, fora do print e da frase
+PASSOU  GEE com sujeito que determina um parâmetro: Mancl e DeRouen indefinida vira aviso, sem erro e sem colunas de MD
+PASSOU  G-11 trim-and-fill com 1 estudo imputado: 'imputed 1 study' e 'imputou 1 estudo', efeito ajustado 0.74 = metafor::trimfill
+== v1.4: meta-análise de prevalência e de acurácia diagnóstica
+PASSOU  prevalência: IC de cada estudo = Clopper-Pearson de binom.test (tol. 1e-12)
+PASSOU  prevalência igual ao meta::metaprop (inverso da variância, REML) em logito, Freeman-Tukey e bruta (tol. 1e-6)
+PASSOU  acurácia (AuditC): sensibilidade .8909 [.8081; .9406] e especificidade .7797 [.7155; .8328], como o mada::reitsma (tol. 1e-5)
+PASSOU  acurácia: correção de 0,5 avisada (estudos 7 e 8 têm FN = 0) e RV+ = sens / (1 - espec) combinadas
+PASSOU  acurácia igual ao mada::reitsma ao vivo (τ² e correlação, com o sinal trocado pela FPR; tol. 1e-4)
+
+== Meta-análise em rede (v1.5, netmeta)
+PASSOU  Franchini 2012 (banco da aula): efeitos do modelo comum iguais ao netmeta direto no formato largo (tol. 1e-10)
+PASSOU  decomposição do Q: total = dentro + entre desenhos
+PASSOU  P-scores com média 0,5
+PASSOU  rede de dois tratamentos = meta-análise par a par do metafor (comum: FE; aleatório: DL; tol. 1e-8)
+
+== Extração de dados para meta-análise (v1.5)
+PASSOU  mediana e IIQ: média de Luo = (0,7 + 0,39/n)(q1 + q3)/2 + (0,3 - 0,39/n) mediana (exemplo da aula: n 15; 9,6; 14,7; 30,7)
+PASSOU  mediana e IIQ: média de Wan = (q1 + mediana + q3)/3
+PASSOU  mediana e IIQ, n > 201: DP = IIQ / [2 Φ⁻¹((0,75n - 0,125)/(n + 0,25))]
+PASSOU  mediana e amplitude, n = 15: DP = amplitude / amplitude esperada da normal (integração numérica; tol. 1e-3)
+PASSOU  combinar dois grupos = média e DP do banco unido (tol. 1e-10)
+PASSOU  DP da mudança com a r observada = DP de pós - pré (tol. 1e-10)
+PASSOU  r implícita recupera a correlação pré-pós (tol. 1e-10)
+PASSOU  DP pelo IC: t com n < 60 e z com n >= 60 (Handbook)
+PASSOU  argumento faltando gera erro claro
+
+== Resumo
+140 de 140 testes passaram em 15 s
+       pacote instalado versao
+1        lme4      TRUE  2.0.6
+2    lmerTest      TRUE  3.2.1
+3     geepack      TRUE 1.3.13
+4     metafor      TRUE  5.2.1
+5     emmeans      TRUE  2.0.4
+6         car      TRUE  3.1.5
+7        MASS      TRUE 7.3.65
+8    sandwich      TRUE  3.1.3
+9 performance      TRUE 0.18.2

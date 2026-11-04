@@ -1,0 +1,73 @@
+PASSOU  sem mapa e sem numero: para com erro (nao ordena alfabeticamente)
+PASSOU  com mapa: 'Nao aconteceu comigo' = 0 e 'maior parte do tempo' = 3; NA preservado; nomes preservados
+PASSOU  com mapa: espacos extras nao quebram a correspondencia
+PASSOU  rotulo fora do mapa vira NA com aviso
+PASSOU  rotulos com numero sem mapa: extrai o numero
+PASSOU  padroes de um so caso entram: gl = soma das variaveis observadas por padrao - p (4 + 3 + 3 - 4 = 6)
+PASSOU  MAR forte (V2 ausente quando V1 alto) e rejeitado
+PASSOU  MCAR simulado nao e rejeitado a 1%
+PASSOU  igual ao naniar::mcar_test
+[sanitizar] 6 registros; 0 vazios removidos
+[recodificar] 0 valores fora da escala -> NA
+[sem_resposta] 0 removidos
+[duplicatas] 0 removidas
+[omissao] 0 removidos
+[mcar] Nenhum dado ausente nas variaveis numericas (MCAR trivial).
+[cier] 0 excluidos
+[mcd] 0 assinalados (Mahalanobis Padrao Regularizado)
+PURIFICACAO CONCLUIDA: N inicial = 6 -> N analitico = 6
+PASSOU  pipeline protege protocolos de todos zeros de exclusao espuria por duplicata
+[sanitizar] 7 registros; 0 vazios removidos
+[recodificar] 0 valores fora da escala -> NA
+[sem_resposta] 0 removidos
+[duplicatas] 1 removidas
+[omissao] 0 removidos
+[mcar] Nenhum dado ausente nas variaveis numericas (MCAR trivial).
+[cier] 0 excluidos
+[mcd] 0 assinalados (Mahalanobis Padrao Regularizado)
+PURIFICACAO CONCLUIDA: N inicial = 7 -> N analitico = 6
+Mensagen de aviso:
+Duplicatas detectadas com menos de 3 colunas alem dos itens: conferir se sao registros repetidos de fato. 
+PASSOU  pipeline detecta duplicatas reais em variaveis substantivas
+== v1.2.0: even-odd, triagem por familias e MCD75
+PASSOU  even-odd igual ao careless::evenodd (subescalas contiguas, tol. 1e-10)
+PASSOU  even-odd aceita subescalas nao contiguas por nome (mesmo valor que reordenar as colunas)
+PASSOU  repeticao e uma familia so: quem repete 2 sem outro indice nao e excluido
+PASSOU  protocolos com zero em todos os itens nao entram na familia repeticao
+PASSOU  repeticao e tempo < 2 s por item juntos excluem (2 familias)
+PASSOU  corte do longstring = metade da escala (Curran, 2016): 10 de 20 itens
+PASSOU  indice que assinala acima do limite_informativo fica fora do criterio, com aviso
+PASSOU  FastMCD: MCD75 por padrao (Leys et al., 2019) e os 5 atipicos plantados assinalados
+PASSOU  Mahalanobis C/IER: alternancia 0/4 e 4/0 (casos 6 e 7) sai com p < .001 contra qui-quadrado(12); retilineos nao
+PASSOU  Mahalanobis por fator (Meade & Craig, 2012) com Bonferroni devolve p entre 0 e 1
+PASSOU  itens de atencao: instrucao direta e infrequencia somam falhas
+PASSOU  triagem: Mahalanobis + tempo exclui os alternados; repeticao + tempo exclui os retilineos
+PASSOU  validar_regras: contagens de violacao e de nao avaliaveis, sem linhas do banco
+PASSOU  codebook: categoria com menos de 5 casos suprimida e texto livre omitido
+psychsyn assinalou 25% dos casos calculaveis (> 20%): indice nao discrimina nesta amostra e ficou fora do criterio
+even-odd com 2 subescalas: a correlacao intrapessoal usa 2 pontos e e instavel
+Mensagen de aviso:
+Duplicatas detectadas com menos de 3 colunas alem dos itens: conferir se sao registros repetidos de fato. 
+PASSOU  pipeline v2: trilha encadeada (n_depois de cada etapa = n_antes da seguinte) e N final = linhas do banco
+PASSOU  pipeline v2: vazio, criterio de inclusao, duplicata e valor fora da escala registrados
+PASSOU  pipeline v2: Tabela 1 em Markdown e texto de Metodo saem com os mesmos numeros da trilha
+PASSOU  fluxograma_mermaid: sintaxe valida gerada a partir da trilha e presente no resultado do pipeline
+PASSOU  exportar_lavaan_mi: gera lista com m data.frames completos prontos para semTools/lavaan.mi
+Mensagen de aviso:
+Duplicatas detectadas com menos de 3 colunas alem dos itens: conferir se sao registros repetidos de fato. 
+psychsyn assinalou 25% dos casos calculaveis (> 20%): indice nao discrimina nesta amostra e ficou fora do criterio
+even-odd com 2 subescalas: a correlacao intrapessoal usa 2 pontos e e instavel
+PASSOU  pipeline v2 em blocos: parar em 'omissao' e retomar da o mesmo resultado que rodar direto
+tempo de resposta nao informado: familia tempo nao calculada
+psychsyn assinalou 52% dos casos calculaveis (> 20%): indice nao discrimina nesta amostra e ficou fora do criterio
+even-odd com 3 subescalas: a correlacao intrapessoal usa 3 pontos e e instavel
+even-odd assinalou 29% dos casos calculaveis (> 20%): indice nao discrimina nesta amostra e ficou fora do criterio
+PASSOU  DASS-21 do projeto: pipeline v2 reproduz N analitico = 116 e 5 atipicos MCD75 nas subescalas (fase 1 de 29/10/2026)
+PASSOU  G^p reproduz o Apendice A de Niessen et al. (2016): respondentes 12 e 161 com 0 e 6 erros, passos na ordem da Tabela A2
+PASSOU  G^p dicotomico: [1,1,1,0,0] tem 0 erros e [1,0,0,1,1] tem 4 (exemplo da secao 3.1)
+PASSOU  lz^p igual ao Zh do mirt::personfit() com o mesmo theta EAP (dif. < 1e-8)
+PASSOU  ajuste de pessoa: com 10% de respondentes aleatorios, a maioria dos assinalados pelo G^p_m e aleatoria
+PASSOU  triagem: ajuste de pessoa conta como familia; so exclui junto com outra (tempo)
+PASSOU  validacao_codebook.R nao sobrescreve mais validar_regras() com outra assinatura
+
+Total higiene-dados 1.5.0: 38 | Passaram: 38 | Falharam: 0

@@ -1,0 +1,32 @@
+== 2PL dicotômico (parâmetros conhecidos)
+PASSOU  2PL recupera os parâmetros simulados: correlação > .90 para a e > .97 para b
+PASSOU  ajuste global = mirt::M2 do mesmo ajuste (M2 para dicotômicos; tol. 1e-8)
+PASSOU  confiabilidade marginal = var / (var + E[1/I(θ)]) sobre N(0, var), conferida numa grade independente (tol. 1e-4)
+PASSOU  Q3 relativo = Q3 menos a média dos Q3 fora da diagonal (Christensen et al., 2017), com os Q3 do mirt
+== Rasch: confiabilidade com variância latente diferente de 1
+PASSOU  Rasch: marginal da skill perto da empírica EAP (|dif| < .03), usando a variância latente estimada
+PASSOU  Rasch: marginal da skill na mesma ordem da confiabilidade de separação do eRm (|dif| < .08)
+PASSOU  divergência documentada: mirt::marginal_rxx integra em N(0, 1) e se afasta da empírica com variância latente 1,6² (> .10); a da skill não (< .03)
+== DIF e comparação de modelos
+PASSOU  DIF logístico: só o item com deslocamento simulado (i3) marcado, com ΔR² de Nagelkerke na faixa B de Jodoin e Gierl
+PASSOU  DIF logístico igual ao difR::difLogistic (type = both, LRT, sem purificar): estatística e ΔR² (tol. 1e-8)
+PASSOU  DIF por mirt (2PL multigrupo, âncoras em duas etapas): i3 marcado, nenhum outro
+PASSOU  comparação Rasch contra 2PL: razão de verossimilhança = 2ΔlogLik com gl = Δparâmetros
+== Graded politômico
+PASSOU  graded: ajuste global pelo M2* quando há gl e, sem gl (6 itens de 4 categorias), pelo C2; igual ao mirt::M2 do mesmo tipo
+PASSOU  privacidade: a impressão traz só agregados (ajuste de pessoas agregado, sem θ individual)
+
+== TRI multidimensional (v1.5)
+PASSOU  multidimensional exploratório: cada item carrega mais na dimensão simulada
+PASSOU  multidimensional exploratório: correlação entre dimensões perto de .40 (tol. .10)
+PASSOU  multidimensional: 2 dimensões vencem o unidimensional no BIC e na razão de verossimilhança
+PASSOU  multidimensional confirmatório igual à chamada direta do mirt (logLik, tol. 1e-4)
+PASSOU  confiabilidade empírica perto do quadrado da correlação entre θ verdadeiro e EAP (tol. .05)
+PASSOU  Rasch multidimensional exploratório recusado (só confirmatório)
+PASSOU  3 dimensões: MHRM escolhido sozinho, como nas aulas
+PASSOU  privacidade: o objeto da TRI multidimensional não guarda θ por pessoa fora do modelo
+
+== Resumo
+21 de 21 testes passaram em 28 s
+       R     mirt     difR      eRm 
+ "4.6.1"   "1.48"  "6.1.0" "1.0.10" 

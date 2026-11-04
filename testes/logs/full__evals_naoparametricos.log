@@ -1,0 +1,21 @@
+== np_fatorial (rankFD)
+PASSOU  ATS e WTS iguais à chamada direta do rankFD (tol. 1e-10)
+PASSOU  efeito de g detectado (p < .001) e efeitos relativos de c acima de 0,5 com IC fora de 0,5
+PASSOU  dois grupos (gl1 = 1): ATS = WTS, forma quadrática de posto 1
+PASSOU  um fator, n igual: efeito relativo = (posto médio - 0,5) / N
+PASSOU  comparações (mctp, Fisher): diferença = diferença dos efeitos relativos e IC dentro de [-1, 1]
+PASSOU  interação significativa abre comparações por subamostra do segundo fator
+== np_longitudinal (nparLD)
+PASSOU  F1-LD-F1: ATS e WTS iguais à chamada direta do nparLD (tol. 1e-10)
+PASSOU  interação grupo × tempo simulada detectada e RTE do grupo E sobe com o tempo
+PASSOU  LD-F1 (só tempo): desenho identificado e comparações entre tempos
+PASSOU  F2-LD-F1: dois fatores entre sujeitos aceitos
+PASSOU  pessoa sem todos os tempos é excluída e contada
+== manova_np (MANOVA.RM)
+PASSOU  MANOVA.wide: WTS, MATS e p bootstrap iguais à chamada direta com a mesma semente
+PASSOU  MATS e WTS invariantes à escala das VDs (v2 × 100)
+PASSOU  univariados com Holm: v1 (com efeito) tem o menor p
+PASSOU  multRM (medidas repetidas): três efeitos e interação detectada
+PASSOU  privacidade: nenhuma tabela impressa tem coluna de id
+
+evals_naoparametricos: 16/16 passaram

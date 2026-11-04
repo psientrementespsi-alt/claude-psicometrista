@@ -1,0 +1,43 @@
+== classes_distal (três passos, BCH)
+PASSOU  BCH recupera as médias simuladas (0 e 1; tol. .15) e corrige o viés da atribuição modal
+PASSOU  BCH: classificação perfeita (posterior 0/1) = médias da atribuição modal
+PASSOU  BCH: diferença entre classes detectada (Wald p < .001)
+PASSOU  BCH: soma dos pesos por pessoa = 1 (D⁻¹ preserva o total)
+PASSOU  BCH categórica: proporções somam 1 por classe
+== rede_bayesiana (bnlearn)
+PASSOU  gaussian.test (exemplo do bnlearn usado nas aulas): o esqueleto da rede média é o da rede geradora
+PASSOU  forças iguais à chamada direta do boot.strength com a mesma semente
+PASSOU  variáveis com até 7 valores viram rede discreta
+== confiabilidade_metades
+PASSOU  ímpares × pares: Spearman-Brown = 2r/(1 + r) e λ4 = 2[1 - (s²A + s²B)/s²X]
+PASSOU  todas as divisões (8 itens, 35 divisões): λ4 médio = alfa (Cronbach, 1951; tol. 1e-10)
+PASSOU  todas as divisões: mínimo, máximo e média = psych::splitHalf(covar = TRUE) (tol. 1e-8)
+PASSOU  todas as divisões: mínimo <= médio <= máximo
+== ausentes (Little)
+PASSOU  Little igual ao naniar::mcar_test (χ², gl, p; tol. 1e-6)
+PASSOU  ausência que depende de outra variável (MAR forte): Little rejeita MCAR (p < .001)
+PASSOU  porcentagens por variável e padrões com n < 5 fora do print
+== controle_desejabilidade (quádruplas)
+PASSOU  cargas de DS com o sinal do polo de desejabilidade em todos os itens
+PASSOU  com o controle, as cargas no traço ficam mais perto das simuladas (|.6| padronizada pela variância)
+PASSOU  validade contra o critério: o modelo com controle fica mais perto do β = .5 simulado
+PASSOU  o fator de desejabilidade melhora o ajuste (Δχ² p < .001)
+== escolha_forcada (TRI thurstoniana)
+PASSOU  5 traços, sinais mistos: correlações entre traços perto das simuladas (.3 e -.3; tol. .12), já no sentido declarado
+PASSOU  confiabilidade empírica perto de cor(θ verdadeiro, θ estimado)² (tol. .08)
+PASSOU  ajuste aceitável no modelo correto (RMSEA < .05)
+== tendencia_joinpoint (incidência de TB 2010-2019, aula de séries temporais)
+PASSOU  masc: ponto em 2015 e APC/AAPC = Joinpoint 4.9.1 com uma casa (-1; 2.7; 0.7)
+PASSOU  fem: ponto em 2016 e APC/AAPC = Joinpoint 4.9.1 com uma casa (-2.4; 2.3; -0.8)
+PASSOU  ambos: ponto em 2015 e APC/AAPC = Joinpoint 4.9.1 com uma casa (-1.6; 2.2; 0.1)
+PASSOU  sem ponto (max_pontos = 0): APC = 100(e^b - 1) da reta em log(taxa)
+PASSOU  série com mudança nítida em 2010: um ponto, em 2010, com APC antes e depois perto das simuladas (+3% e -2%)
+PASSOU  IC empírico: reproduzível com a mesma semente e contém a estimativa
+== taxa_padronizada (método direto)
+Mensagen de aviso:
+In prettyNum(r, big.mark = big.mark, big.interval = big.interval,  :
+  'big.mark' e 'decimal.mark' são ambos '.', o que pode ser confuso
+PASSOU  taxa padronizada = Σ (padrão/total) × casos/pop
+PASSOU  igual ao epitools::ageadjust.direct (taxa e IC gama de Fay-Feuer; tol. 1e-10)
+
+evals_complementos: 30/30 passaram

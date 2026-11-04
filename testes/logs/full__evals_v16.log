@@ -1,0 +1,61 @@
+== modelo_ordinal (MASS::housing, Venables & Ripley)
+PASSOU  coeficientes e limiares iguais ao polr ponderado (1e-6)
+PASSOU  valores publicados: InflHigh 1.2888, TypeTerrace -1.0910, limiar Low|Medium -0.4961 (4 casas)
+PASSOU  OR = exp(B) e R² de Nagelkerke = Cox-Snell / máximo
+PASSOU  linhas paralelas por variável iguais ao ordinal::nominal_test (1e-4)
+PASSOU  teste global de linhas paralelas não rejeita (p > .05)
+PASSOU  probit: sinais iguais aos do logit e razão perto de 1,7
+== modelo_multinomial
+PASSOU  coeficientes iguais ao VGAM::vglm multinomial (1e-4)
+PASSOU  RV por termo = 2 × diferença de log-verossimilhança contra o modelo sem o termo
+PASSOU  referencia_vd troca a categoria-base e inverte o sinal do contraste c2 vs c1
+== efeito_contextual
+PASSOU  contextual (b_media - b_cwc) = coeficiente da média do cluster com X centrado na média geral (1e-6)
+== concordancia_juizes: AC1/AC2 de Gwet e alfa de Krippendorff
+PASSOU  aula (10 sim-sim): κ incalculável, AC1 = 1 e aviso do paradoxo
+PASSOU  aula (9 sim-sim, 1 sim-não): κ = 0 com 90% de concordância; AC1 = .8895 e aviso
+PASSOU  aula (8, 1, 0, 1): κ = .6154 = (.9 - .74)/.26
+PASSOU  AC1 (4 juízes) e AC2 quadrático iguais ao irrCAC::gwet.ac1.raw (1e-5)
+PASSOU  Krippendorff nominal e intervalar iguais ao irrCAC::krippen.alpha.raw (1e-5)
+PASSOU  Krippendorff ordinal = intervalar sobre os postos médios das categorias (identidade da métrica ordinal)
+PASSOU  2 juízes ordinais: AC2 igual ao irrCAC e κ ponderado igual ao psych
+== confiabilidade(ic = TRUE)
+PASSOU  IC do ômega por bootstrap perto do IC delta do parâmetro definido no lavaan (tol. .015)
+PASSOU  IC do alfa por bootstrap perto do IC de Feldt (psych::alpha.ci; tol. .015)
+PASSOU  sem ic = TRUE a saída da v1.5 não muda (colunas fator, omega, alfa, itens)
+== spearman_brown e corrigir_correlacao (Martinková & Hladká, 2023)
+PASSOU  4.2.5.1: 20 itens com .75 levados a 30 = .8182; alvo .85 pede 38 itens
+PASSOU  2.4.3: r restrito .3633 corrigido para .6548 (= psych::rangeCorrection)
+PASSOU  atenuação: .30 com rxx = .70 e ryy = .80 dá .30/sqrt(.56) (= psych::correct.cor)
+PASSOU  valor corrigido acima de 1 gera aviso
+== generalizabilidade (Petersen, 2024, cap. 5; Martinková & Hladká, 2023, 4.5)
+PASSOU  componentes publicados: pessoa 2.4780, item 3.1238, pessoa×item .7873, resíduo .8374 (4 casas)
+PASSOU  Eρ² = .8731 e Φ = .6374, como o gtheory::dstudy no livro
+PULADO  generalizabilidade vs gtheory (gtheory não instalado (arquivado no CRAN))
+PASSOU  HCI (uma faceta): variâncias .0237/.0270/.1885 e Φ = .6874 com 20 itens
+PASSOU  dados balanceados: componentes iguais aos da ANOVA por quadrados médios (p × i)
+PASSOU  estudo D: Φ cresce com o número de itens e Eρ² >= Φ
+== analise_distratores (Martinková & Hladká, 2023, 5.5)
+PASSOU  proporções por grupo iguais às contagens do ShinyItemAnalysis::DistractorAnalysis (item 1)
+PASSOU  gabarito do item 1 discrimina (superior - inferior > 0) e o distrator C não
+== dmacs (Nye & Drasgow, 2011)
+PASSOU  dMACS igual ao pinsearch::dmacs com os mesmos parâmetros e DP combinado (1e-10)
+PULADO  dMACS vs dmacs (dmacs não instalado (arquivado no CRAN))
+PASSOU  forma fechada = integral numérica com traço de média .5 e variância 1,7 no grupo focal
+PASSOU  no modelo escalar (cargas e interceptos iguais) o dMACS é zero
+PASSOU  configural com std.lv: aviso de métrica fixa e proporção de viés não calculada
+== tri_dif(metodo = "mh")
+PASSOU  sem purificação: χ² de MH e αMH iguais ao difR::difMH (1e-10)
+PASSOU  com purificação (p sem correção): igual ao difR::difMH(purify = TRUE)
+PASSOU  ΔMH = -2,35 ln αMH e classes A/B/C pela régua do difR
+== regressao_logistica(validar = TRUE)
+PASSOU  no próprio banco a inclinação de calibração vale 1 e o intercepto 0 (máxima verossimilhança)
+PASSOU  com 8 preditores e 150 casos o otimismo é positivo: AUC e inclinação corrigidas menores
+PASSOU  perto do rms::validate (AUC tol. .02, inclinação tol. .08; reamostras diferentes)
+== qui_quadrado 2 × 2: RR, DR e NNT
+PASSOU  RR = .25/.40, DR = -.15 e NNT = 6,7
+PASSOU  IC da DR igual ao Newcombe (DescTools::BinomDiffCI, method = "score")
+== afe_numero_fatores(mrfa = TRUE)
+PASSOU  PA-MRFA recupera 2 fatores simulados e entra na tabela e na frase
+
+evals_v16: 44/44 passaram

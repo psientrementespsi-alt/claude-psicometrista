@@ -1,0 +1,67 @@
+== Âncoras: BFI Network (Vol. 7, caps. 23 e 24; JASP 0.95.1, padrões do módulo Network)
+PASSOU  25 nós e 300 arestas possíveis, p(p-1)/2 (md7:361)
+PASSOU  181 arestas não nulas de 300, 53 negativas, esparsidade .397 (JASP; contagem da Weights matrix em spec_T6 P10; o livro diz "cerca de metade", md7:227)
+PASSOU  N = 2800 com ausentes par a par e tamanho de amostra "Maximum" (md7:202; md7:216)
+PASSOU  N1–N2 = .570, a aresta mais forte (md7:227; md7:571; tol .0005)
+PASSOU  N3–N4 = .302, a segunda maior do bloco (md7:571; tol .0005)
+PASSOU  C4–C5 = .301, A2–A3 = .274, A1–A2 = -.273, E2–E4 = -.274 (Weights matrix do JASP, spec_T6 P10; tol .0005)
+PASSOU  força em z: C4 1.649, E2 1.389, E4 1.302, E5 1.289, C3 -1.706, A4 -1.502 (md7:246; tol .0005)
+PASSOU  tabela de centralidade do JASP inteira: 25 itens x 4 índices em z (intermediação, proximidade, força, influência esperada; spec_T6 P10; tol .0005)
+PASSOU  influência esperada em z: N1 1.723 no topo, N3 1.478, N2 1.281 (JASP, spec_T6 P10; tol .0005)
+PASSOU  frase APA com os elementos do livro: EBICglasso, γ = 0.50, policóricas, 181 de 300, N1 e N2 com peso .57, C4 no topo da força e frase de alcance (md7:431-435)
+PASSOU  decimal = ",": γ = 0,50 (com zero), peso = ,57 e densidade = ,60 (sem zero), z = 1,65 (md7:560)
+PASSOU  redundância antes da rede: UVA sinaliza N1–N2 (wTO ≥ .25), a aresta que o livro diz poder ser redação parecida (md7:227)
+PASSOU  checklist do livro (md7:520) com N, nós e arestas possíveis e os três pendentes da estabilidade
+PASSOU  equivalência: grafo igual ao bootnet::estimateNetwork com os padrões do JASP (pesquisa_github A.5; tol 1e-12)
+PASSOU  os padrões do bootnet (Pearson, pairwise_average) dão outra rede: por isso a função declara os do JASP
+PASSOU  BFI, bootstrap de arestas (20 reamostras): N1–N2 se distingue de N3–N4 e nenhum IC de outra aresta toca o dela (md7:433)
+PASSOU  BFI, IC bootstrap de N1–N2 contém o peso estimado e fica acima de .50
+PASSOU  ponte no BFI igual ao networktools::bridge (força, influência esperada 1 passo, intermediação; tol 1e-12)
+== Verdade conhecida: GGM com rede plantada
+PASSOU  recupera as 9 arestas plantadas (sensibilidade 1) e r ≥ .95 entre pesos estimados e verdadeiros (n = 3000)
+PASSOU  toda aresta plantada supera em |peso| qualquer aresta ausente na verdade
+PASSOU  contagens coerentes: 45 possíveis, não nulas = soma de W ≠ 0 na metade superior, densidade = não nulas/45
+PASSOU  centralidade bruta: força = Σ|w|, influência esperada = Σw, intermediação = qgraph/2 (como o JASP; tol 1e-12)
+PASSOU  z do "Normalized" do JASP = scale() de cada índice (tol 1e-12)
+PASSOU  força: nós internos das cadeias (x2-x4, x7-x9) acima das pontas x1 e x10, como na rede verdadeira
+== Ausentes e tamanho de amostra
+PASSOU  par a par + "maximum": N = casos com ao menos uma resposta (999), igual ao bootnet:::sampleSize_pairwise; caso vazio sai e é contado
+PASSOU  listwise: N = casos completos e n_excluidos = incompletos
+PASSOU  com ausentes, a rede par a par é a do bootnet com os mesmos argumentos (tol 1e-12)
+== Precisão e estabilidade (bootstrap)
+PASSOU  CS(força) acima de .50 com n = 3000 e menor com n = 150 na mesma rede (100 reamostras de casos)
+PASSOU  CS pela definição (r > .70 em mais de 95% das reamostras, maior proporção descartada), refeito à mão a partir do bootTable
+PASSOU  cortes do CS: < .25 não interpretar; .25 a .50 cautela; > .50 preferível; teto marcado; sem patamar "excelente" (md7:385; md7:562)
+PASSOU  decisões declaram n_boot, semente, caseMin/caseMax/caseN e a definição do CS com r ≥ .70 e 95%
+PASSOU  ressalva do livro: IC de aresta regularizada é descritivo, não teste (md7:451), na decisão e na frase APA
+PASSOU  aviso quando n_boot < 1000 (padrão do livro, md7:377)
+PASSOU  aresta dominante (.50 contra .20) se distingue da segunda; com arestas iguais (.35) a diferença inclui o zero (80 reamostras, n = 1000)
+PASSOU  frase APA da comparação: "distinguiu-se" num caso e "não se distinguiu" no outro
+PASSOU  proximidade e intermediação entram quando pedidas, com a ressalva de Bringmann et al. (2019) (40 reamostras, 5 níveis)
+== Ising, mgm, previsibilidade, ponte e redundância
+PASSOU  Ising: recupera a cadeia plantada de 6 nós binários (5 arestas, todas positivas, nenhuma falsa; n = 3000)
+PASSOU  Ising com itens codificados 1/2: recodifica para 0/1 e dá a mesma rede
+PASSOU  Ising recusa itens com mais de 2 categorias
+PASSOU  equivalência: Ising igual ao bootnet::estimateNetwork(default = "IsingFit", tuning = 0.5) (tol 1e-12)
+PASSOU  mgm com 5 gaussianos e 1 binário: tipos inferidos (g, c) e as 5 arestas da cadeia superam todas as outras
+PASSOU  previsibilidade: R² do mgm a .03 do R² verdadeiro de cada nó, 1 - 1/K_ii (n = 5000)
+PASSOU  previsibilidade: R² implicado pela rede EBICglasso a .05 do verdadeiro (encolhido pelo LASSO, nunca acima + .01)
+PASSOU  equivalência: previsibilidade igual ao mgm + predict chamados direto (γ = 0.5, regra AND; tol 1e-12)
+PASSOU  previsibilidade em Ising: acurácia (CC) e acurácia normalizada (nCC) por nó, entre 0 e 1
+PASSOU  ponte na rede verdadeira: só x5 e x6 têm força de ponte (= .25, a aresta entre as cadeias), os demais zero
+PASSOU  ponte recusa partição com uma comunidade só
+PASSOU  redundância: UVA sinaliza um item quase duplicado (x1 e x11) antes da rede
+== Equivalência com bootnet
+PASSOU  IC das arestas = quantis tipo 6 do bootTable, refeitos à mão (os mesmos do summary do bootnet; tol 1e-12)
+PASSOU  CS igual ao bootnet::corStability do mesmo objeto
+PASSOU  semente: bootnet::bootnet com set.seed(2026) e os mesmos argumentos dá os mesmos IC (30 reamostras; tol 1e-12)
+PASSOU  diferença de |peso| entre as duas maiores = bootnet::differenceTest(measure = "edge") quando as duas são positivas
+== Formatação, idioma e privacidade
+PASSOU  nenhum texto gerado usa travessão longo
+PASSOU  nenhum texto gerado usa as palavras vetadas
+PASSOU  nenhum texto gerado cria patamar "excelente" para o CS nem chama centralidade de alvo de intervenção comprovado
+PASSOU  idioma = "en": frases em inglês com a frase de alcance e o CS
+PASSOU  print funciona e nenhuma tabela impressa tem uma linha por participante
+
+== Resumo
+57 de 57 testes passaram em 31 s

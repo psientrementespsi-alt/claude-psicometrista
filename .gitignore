@@ -1,0 +1,8 @@
+.DS_Store
+*.bak-*
+*.tar.gz
+*.sav
+*.csv.gz
+!dependencias/*.csv
+dados/
+repositorios/

@@ -1,0 +1,13 @@
+PASSOU  curso, Rasch BLOT: dificuldades e EP iguais ao eRm do relatório (tol. .0015)
+PASSOU  curso, Rasch BLOT: infit e outfit MNSQ iguais ao eRm (tol. .0015)
+PASSOU  curso, Rasch BLOT: infit e outfit t iguais ao eRm (tol. .0015)
+PASSOU  curso, Rasch BLOT: soma das dificuldades = 0 e 3 casos com escore extremo fora do ajuste
+PASSOU  Rasch CML simulado: recupera as dificuldades (erro < .1) e Andersen não rejeita (p > .05)
+PASSOU  Rasch CML: item com discriminação 2,5 faz o Andersen rejeitar e tem outfit < .7 (sobreajuste)
+PASSOU  CSEM binomial: sqrt(x(n-x)/(n-1)) e máximo no meio da escala
+PASSOU  CSEM de Thorndike: SEM geral = DP da diferença entre metades (eq. 72)
+PASSOU  equacionamento linear: X convertida tem média e DP de Y
+PASSOU  equacionamento pela média: deslocamento constante = média(Y) - média(X)
+PASSOU  equipercentil: X contra si mesma devolve a identidade nos escores observados e a média convertida fica a < .05 de média(Y)
+
+Total evals_v22 2.2.0: 11 | Passaram: 11 | Falharam: 0

@@ -1,0 +1,121 @@
+== (1) Âncoras do livro: Vol. 1, cap. 7 (md1:540-574; md1:750)
+PASSOU  r = .35, poder .80: G*Power exato 61 (md1:750)
+PASSOU  r = .35, poder .90: G*Power exato 81 (md1:750)
+PASSOU  r = .10, poder .80: G*Power exato 782 (md1:750)
+PASSOU  r = .35, poder .80: Fisher 62 (md1:542; md1:570)
+PASSOU  r = .35, poder .90: Fisher 82 (md1:542)
+PASSOU  r = .10, poder .80: Fisher 783 (md1:544)
+PASSOU  r = .10 com N = 500: poder 61% nos dois métodos (md1:544; tol. .005)
+PASSOU  r = .35 com N = 500: poder praticamente 1 (md1:544)
+PASSOU  conta de Fisher do livro: 61,77 antes de arredondar (md1:574; tol. .005)
+PASSOU  perda pelo livro: inflar 10% a 20% leva 62 a 69 e 75 (md1:570)
+PASSOU  frase APA segue o modelo do livro (efeito, α bicaudal, poder, N; md1:642)
+== (2) Exemplos do curso conferidos contra o G*Power (spec_T3, seção 25)
+PASSOU  #1 correlação ρ = .16 -> 304
+PASSOU  #2 correlação ρ = .30 -> 84 (pwr::pwr.r.test dá 85: divergência documentada)
+PASSOU  correlação ρ = .50 -> 29 e ρ = .30 unicaudal -> 67
+PASSOU  #3 t independente, d de médias 15 e 18 com DP 6,15 -> 67 + 67 = 134
+PASSOU  #3 t independente, d = .488 digitado -> 134
+PASSOU  #4 t independente, d = .50 -> 128
+PASSOU  #5 t pareado, dz = .30, poder .90 -> 119
+PASSOU  #6 t pareado, dz = .40, poder .80 -> 52
+PASSOU  #7 one-way, f de médias 12, 12, 15 e DP 6,15 = .22995 (tol. 5e-5)
+PASSOU  #7 one-way, f = .23, 3 grupos -> 186 (o 189 da aula não se reproduz)
+PASSOU  #8 one-way, f = .50, 3 grupos -> 42
+PASSOU  one-way, f = .25, k = 3, 4, 5 -> 159, 180, 200 (G*Power arredonda para grupos iguais; mínimos 158, 179, 196)
+PASSOU  #9 MR intra, f = .33, 4 medidas, poder .90, rho = NA -> 132
+PASSOU  #9 MR intra com 'Number of groups' = 4 (como na aula) -> também 132
+PASSOU  #9 MR intra com f exato de ηp² = .10 (.3333) -> 129; a frase imprime f com 4 casas (.333 daria 130, .33 daria 132)
+PASSOU  MR intra, sensibilidade a ε: .75 -> 162 e .50 -> 217 (curso, seção 17)
+PASSOU  #10 fatorial 3 × 5, ηp² = .06, gl 8, 15 células -> 244
+PASSOU  #10 fatorial com o f transcrito pela aula (.225) -> 305, logo .225 é erro de transcrição
+PASSOU  fatorial 3 × 5: efeitos principais A -> 155 e B -> 193 (curso, seção 18)
+PASSOU  #11 MR interação 3 × 2, f = .204, poder .90, rho = NA -> 309 (mínimo 308, múltiplo de 3)
+PASSOU  #12 ANCOVA interação 3 × 5 com 1, 2 e 3 covariáveis -> 244
+PASSOU  #13 ANCOVA, efeito da covariável (gl = 1) com 1, 2 e 3 covariáveis -> 126
+PASSOU  #14 regressão global, R² = .20 (f² = .25), 5 preditores -> 58
+PASSOU  #15 coeficiente, R² parcial = .0625 (f² = .0667), 5 preditores -> 120
+PASSOU  #15 coeficiente com R² parcial = .067 (leitura literal da aula) -> 112
+PASSOU  #16 ΔR² = .05 sobre R² = .20, 3 testados de 5 -> 168 (poder .90 -> 217)
+PASSOU  #16 ΔR² com f² = .067 digitado -> 167
+PASSOU  #17 logística, OR = 1.52, Pr H0 = .30, Demidenko com correção -> 227
+PASSOU  logística: Hsieh -> 214, Demidenko sem correção -> 235 (curso, seção 24); R² other X = .20 -> 293 (regra do manual, C4)
+PASSOU  logística: p0 = .05 -> 898 e .50 -> 196 (sensibilidade a p0, curso)
+PASSOU  dz a partir de d = .30 com r = .30, .50, .70 -> N = 166, 119, 72 (curso, seção 14)
+PASSOU  regra 50 + 8k diverge do G*Power com f² = .15: k = 4 -> 85 e k = 10 -> 118
+== (2b) Faul et al. (2007, pp. 13-14): exemplo de medidas repetidas do artigo do G*Power
+PASSOU  intra: λ = 25.52 (tol. .005)
+PASSOU  intra: poder .997 (tol. .0005), gl = 2 e 174, F crítico 3.048 (tol. .0005)
+PASSOU  interação: f = .1532 -> poder .653 (tol. .0005)
+PASSOU  entre: f = .1719571 -> poder .488 (tol. .0005)
+PASSOU  Berti et al. no artigo: f = .25, N = 20, 2 grupos, 10 medidas, ρ = .5 -> A .30, B .95, A × B .95 (tol. .005)
+== (3) Equivalência com pwr e pwrss
+PASSOU  t independente e pareado: N igual ao teto do pwr::pwr.t.test numa grade de d e poder
+PASSOU  t com grupos desiguais: poder igual ao pwr::pwr.t2n.test (tol. 1e-4: a tabela guarda 4 casas)
+PASSOU  one-way: N igual a teto(pwr::pwr.anova.test) × k numa grade
+PASSOU  fatorial e ANCOVA: N mínimo igual ao teto do pwrss::power.f.ancova (ceil.n = FALSE)
+PASSOU  medidas repetidas: poder igual ao pwrss::power.f.mixed.anova (modo padrão e rho = NA; tol. 1e-4)
+PASSOU  medidas repetidas: N igual ao pwrss::power.f.mixed.anova (ceil.n = TRUE)
+PASSOU  regressão global: N = teto(v) + u + 1 do pwr::pwr.f2.test
+PASSOU  regressão ΔR²: N igual ao pwrss::power.f.regression (f² convertido para o argumento dele)
+PASSOU  regressão ΔR²: o atalho do pwr.f2.test diverge (f² = .15, 2 de 5: G*Power 68, pwr 71)
+PASSOU  qui-quadrado: N = teto do pwr::pwr.chisq.test (w = .1, .3, .5; gl 1 a 4)
+PASSOU  correlação exata: poder igual ao pwrss::power.exact.onecor com N dado (tol. 1e-4)
+== (4) Conversões de efeito
+PASSOU  η² .01, .06, .14 -> f .1005, .2526, .4035 (tol. 5e-5)
+PASSOU  f <-> η² ida e volta
+PASSOU  f de médias com n desiguais pondera pelas frequências
+PASSOU  d de médias: DP pelo 'Determine' (média das variâncias) e ponderado com n
+PASSOU  r <-> d ida e volta (grupos iguais) e d = .5 -> r = .2425
+PASSOU  f² de R² e de ΔR²: .20 -> .25; ΔR² .05 sobre .20 -> .0667
+PASSOU  OR de probabilidades e dz de d
+PASSOU  d de t e n (rota B do curso): t = 2.5 com 30 e 30 -> .6455
+== (5) Comportamento das funções
+PASSOU  perda N / (1 - perda): 62 com 20% -> 78; one-way 186 com 20% -> 234 (múltiplo de 3)
+PASSOU  post hoc devolve poder e avisa sobre efeito observado (md1:554)
+PASSOU  frase APA com placeholder quando falta a origem do efeito
+PASSOU  frase APA em inglês e com vírgula decimal
+PASSOU  configuração do G*Power impressa (família, teste, campos)
+PASSOU  MR com rho = NA avisa que 'as in Cohen (1988)' não está implementada
+PASSOU  objeto é pr_resultado (relatar() funciona) e o print não falha
+PASSOU  erros claros: f e eta2p juntos; ε fora do limite; testados > preditores
+== (6) Correções da revisão v1.1.0 (C4, C5, C6, C14a)
+PASSOU  C4 logística, manual 29.4 com R² = 0: Demidenko com correção 337, sem correção 355, Hsieh 317
+PASSOU  C4 logística binária, manual 29.4: 1437, 2158, 2368 com correção e 1498 sem
+PASSOU  C4 logística, manual 29.4 com R² other X = .1 -> 395 em 'G*Power, saída'; 375 da fórmula documentada no bloco da skill e aviso
+PASSOU  C4 logística com R² > 0 e preditor binário (sem exemplo publicado): N fora de 'G*Power, saída', aviso e frase sem G*Power
+PASSOU  C4 frase da logística com R² > 0 traz o R² dos demais preditores
+PASSOU  C5 alocação, manual seção 17 (t de inclinações, razão 1,571428): 163 + 256, δ = 2.811598, poder .800980
+PASSOU  C5 alocação, manual seção 15 (duas variâncias, alocação 2): 148 + 295; com alocação 1, poder .800105 em 193 + 193
+PASSOU  C5 t independente, d = .5, razão 1,571428 -> 53 + 82 = 135 (n1* da raiz do pwr::pwr.t2n.test)
+PASSOU  C6 frase com α = .001, .0167 (.05/3) e .005, e N do mesmo α
+PASSOU  C6 α comum continua com 2 casas (.05, .01, .10) e vírgula decimal funciona (,001)
+PASSOU  C14a correlação ρ = .35 com metodo = 'fisher': saída do G*Power = 61, skill = 62, frase cita Fisher e não o G*Power
+== (7) Correções da verificação final (G-12, G-02, F1, F2, G-08, G-09, H-15)
+PASSOU  G-12 d = .625 -> frase 'd = 0.625' e 84; f = .345 -> 'f = 0.345' e 87 (pwr: 84 e 87 com o impresso; 82 e 84 com .63 e .35)
+PASSOU  G-12 varredura: 1260 combinações, o efeito lido da frase devolve no pwr o N da frase
+PASSOU  G-12 regressão global: 276 combinações, o f² lido da frase devolve no pwr o N da frase
+PASSOU  G-02 logística Hsieh, preditor binário: 1437 e poder 0.950068 (manual 29.4); normal: 317 e 0.950486
+PASSOU  F1 d = 3, razão 3 -> 2 + 6 = 8; d = 4, razão 2 -> 2 + 4; d = 4, razão .5 -> 4 + 2 (desenho mínimo, poder do pwr >= .80, com aviso)
+PASSOU  F1 efeitos grandes com razão != 1 em que o mínimo não basta: d = 2/razão 4, 2,5/3 (poder .90), 1,8/5 = raiz do pwr::pwr.t2n.test
+PASSOU  F2 poder .975 -> 'poder de .975' (248) e .999 -> 'power of .999' (412); .80 e .90 continuam com 2 casas
+PASSOU  G-08 manual 11.3: λ = 53.935690, F crítico = 3.123907, gl 72 e poder com 6 casas (0.99999, tol. 1e-5), não '1'
+PASSOU  G-09 manual 20.3: uma amostra com 'Effect size d' e 'd =' na frase; 30 (δ 3.423266, t 1.699127, 0.955144) e 1492 (0.900169)
+PASSOU  H-15 Faul et al. (2009), compromisso com R² other X = .40: z crítico 3.454879 (binário) e 2.146971 (normal), tol. 2e-6
+== v1.4: AFC e MEE (Kelley & Lai, 2018, cap. 5 do Wiley Handbook; exemplos do capítulo)
+PASSOU  RMSEA, ajuste exato (ε0 = 0, ε = .045, gl = 5): N = 1.268 (capítulo: 1.269 pelo MBESS, que para a .001 do alvo)
+PASSOU  RMSEA, ajuste não aproximado (H0 ε ≥ .08, ε = .045, gl = 5): N = 1.116 (capítulo: 1.113 pelo MBESS)
+PASSOU  RMSEA, ajuste aproximado de MacCallum et al. (1996): ε0 = .05 contra .08 com gl = 20 dá N = 434; λ = (N - 1) gl ε²
+PASSOU  igual a semTools::findRMSEAsamplesize em 6 cenários (exato, aproximado, não aproximado, 2 grupos)
+PASSOU  AIPE do RMSEA (ε = .045, gl = 5, IC 90%): larguras .060, .050 e .040 dão N = 802, 1.059 e 1.544, como no capítulo
+PASSOU  IC do RMSEA com N = 802: largura <= .060 e com N = 801 maior (busca do menor N)
+PASSOU  aninhados por RMSEA (MacCallum, Browne & Cai, 2006): restrito .0625 -> 336, .07 -> 268 (capítulo) e .06 -> 365 (capítulo: 364 pelo MBESS)
+PASSOU  aninhados por F (Satorra & Saris, 1985): F_restrito = .02346, Δgl = 1 -> N = 336, como no capítulo
+PASSOU  Σ1 montada confere com as covariâncias da tabela 5.4 (.601, .842, .644; tol. .002)
+PASSOU  AIPE de λ1 (largura .15, IC 95%) com Σ1: N = 1.007, como o MBESS::ss.aipe.sem.path no capítulo
+PASSOU  aninhados com Σ e sintaxes: Σ implicada pelo próprio modelo restrito dá ΔF ~ 0 e para com mensagem
+PASSOU  aninhados com Σ1: F de cada modelo = 2 x fmin do lavaan sem reescalar e N pela qui-quadrado não central (conta à mão)
+
+== Resumo
+108 de 108 testes passaram em 8 s
+R 4.6.1 | pwrss 1.3.1 | pwr 1.3.0 

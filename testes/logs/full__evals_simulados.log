@@ -1,0 +1,196 @@
+== Auditoria e escolha do estimador
+PASSOU  auditoria: uma linha por item, só agregados
+PASSOU  4 categorias -> WLSMV ordinal
+PASSOU  escala 0-100 -> MLR contínuo
+PASSOU  5 categorias simétricas, n = 1000 -> WLSMV principal com MLR de sensibilidade
+PASSOU  5 categorias simétricas, n = 150 -> MLR principal (Rhemtulla: ML com amostra pequena e limiares simétricos)
+PASSOU  5 categorias assimétricas -> WLSMV, motivo cita limiares assimétricos
+== AFC ordinal
+PASSOU  cargas padronizadas recuperadas (.70 +- .08)
+PASSOU  correlações entre fatores recuperadas (.30 +- .08)
+PASSOU  tabela de ajuste traz versão escalonada e robusta
+PASSOU  modelo correto: CFI robusto >= .95 e RMSEA robusto <= .06
+PASSOU  modelo errado (1 fator) ajusta pior
+== Confiabilidade e validade
+PASSOU  ômega e alfa por fator, entre 0 e 1
+PASSOU  ômega da resposta latente perto do teórico (.794 +- .04)
+PASSOU  ômega do escore observado abaixo do latente (categorização perde informação)
+PASSOU  AVE perto do teórico (.49 +- .07)
+PASSOU  HTMT < .85 e Fornell-Larcker atendido com fatores a .30
+PASSOU  fatores a .90: HTMT > .85 e Fornell-Larcker reprovado
+PASSOU  um fator só: Fornell-Larcker sai NA, não TRUE
+PASSOU  relato APA sem zero à esquerda
+PASSOU  relato com vírgula decimal e ponto e vírgula entre itens
+PASSOU  formato de p nos extremos e sem -0
+  exemplo de relato (dados simulados): χ²(51) = 66.87, p = .067, CFI = .993, TLI = .991, RMSEA = .021, IC 90% [.000, .035], SRMR = .026 
+== Segunda ordem no formato do MPFI-24 (12 fatores de 2 itens, 6 categorias)
+Mensagen de aviso:
+lavaan->lav_model_pt():  
+   variances of ordered variables are ignored when parameterization = 
+   "delta"; please remove them from the model syntax or use parameterization 
+   = "theta"; variables involved are: m1 m2 m3 m4 m5 m6 m7 m8 m9 m10 m11 m12 
+   m13 m14 m15 m16 m17 m18 m19 m20 m21 m22 m23 m24 
+PASSOU  6 categorias simétricas -> WLSMV com MLR de sensibilidade
+PASSOU  2a ordem: ajuste robusto bom (CFI >= .95, RMSEA <= .06)
+PASSOU  2a ordem: cargas de 2a ordem recuperadas (.70 +- .10)
+PASSOU  2a ordem: correlação entre flex e inflex recuperada (-.40 +- .10)
+PASSOU  2a ordem: ômega do composto no modelo de 2a ordem = hierárquico (.766 +- .04)
+PASSOU  fatores correlacionados: ômega do composto = total (.899 +- .03)
+PASSOU  ômega do composto observado (ordinal) abaixo do latente
+PASSOU  subescalas: confiabilidade() roda em modelo de 2a ordem (12 subescalas, sem os fatores gerais)
+PASSOU  subescalas: ômega no modelo de 2a ordem (parte do fator geral) < ômega no modelo correlacionado
+PASSOU  2a ordem: validade_discriminante() roda nos 12 fatores de 1a ordem
+PASSOU  2a ordem: invariancia() recusa modelo com fator de ordem superior, com mensagem
+== Invariância ordinal (Wu e Estabrook, 2016)
+Índices robustos indisponíveis (NA) para limiares: relatar a versão escalonada e dizer por quê.
+Índices robustos indisponíveis (NA) para cargas: relatar a versão escalonada e dizer por quê.
+Índices robustos indisponíveis (NA) para interceptos: relatar a versão escalonada e dizer por quê.
+       modelo   cfi  rmsea delta_cfi delta_rmsea p_dif_qui2
+1  configural 0.998 0.0230        NA          NA         NA
+2    limiares 0.998 0.0211 -0.000178    -0.00194      0.357
+3      cargas 0.998 0.0230 -0.000744     0.00195      0.185
+4 interceptos 0.999 0.0148  0.001247    -0.00820      0.821
+PASSOU  grupos invariantes: |ΔCFI| <= .010 em todos os passos
+PASSOU  grupos invariantes: nenhum passo rejeitado (p > .01)
+Índices robustos indisponíveis (NA) para limiares: relatar a versão escalonada e dizer por quê.
+Índices robustos indisponíveis (NA) para cargas: relatar a versão escalonada e dizer por quê.
+Índices robustos indisponíveis (NA) para interceptos: relatar a versão escalonada e dizer por quê.
+       modelo   cfi rmsea delta_cfi delta_rmsea p_dif_qui2
+1  configural 1.000 0.000        NA          NA         NA
+2    limiares 1.000 0.000     0.000       0.000   6.52e-01
+3      cargas 1.000 0.000     0.000       0.000   3.06e-01
+4 interceptos 0.887 0.148    -0.113       0.148   1.35e-70
+PASSOU  deslocamento uniforme dos limiares: passa nos limiares e cai nos interceptos (p < .001, ΔCFI < -.010)
+Índices robustos indisponíveis (NA) para limiares: relatar a versão escalonada e dizer por quê.
+Índices robustos indisponíveis (NA) para cargas: relatar a versão escalonada e dizer por quê.
+Índices robustos indisponíveis (NA) para interceptos: relatar a versão escalonada e dizer por quê.
+       modelo   cfi  rmsea delta_cfi delta_rmsea p_dif_qui2
+1  configural 1.000 0.0000        NA          NA         NA
+2    limiares 0.977 0.0773   -0.0228     0.07729   6.88e-23
+3      cargas 0.965 0.0877   -0.0127     0.01044   1.43e-08
+4 interceptos 0.950 0.0966   -0.0149     0.00885   2.57e-10
+PASSOU  mudança de espaçamento entre limiares: cai no passo dos limiares (p < .001)
+Índices robustos indisponíveis (NA) para limiares: relatar a versão escalonada e dizer por quê.
+Índices robustos indisponíveis (NA) para cargas: relatar a versão escalonada e dizer por quê.
+Índices robustos indisponíveis (NA) para interceptos: relatar a versão escalonada e dizer por quê.
+       modelo   cfi  rmsea delta_cfi delta_rmsea p_dif_qui2
+1  configural 0.995 0.0394        NA          NA         NA
+2    limiares 0.995 0.0333  0.000223    -0.00602     0.5977
+3      cargas 0.993 0.0367 -0.002303     0.00338     0.0423
+4 interceptos 0.993 0.0329  0.000435    -0.00384     0.3573
+PASSOU  diferença real de média latente com itens invariantes: nenhum passo rejeitado (p > .01, |ΔCFI| <= .010)
+PASSOU  auditoria por grupo traz a menor categoria dentro dos grupos
+PASSOU  auditoria por grupo ignora nível de grupo sem casos
+PASSOU  validade_discriminante() recusa modelo multigrupo com mensagem
+       modelo cfi rmsea delta_cfi delta_rmsea p_dif_qui2
+1  configural   1     0        NA          NA         NA
+2    limiares   1     0         0           0         NA
+3      cargas   1     0         0           0      0.857
+4 interceptos   1     0         0           0      0.731
+PASSOU  3 categorias: o passo dos limiares não ganha grau de liberdade e fica sem p, sem teste inventado
+== Caminho contínuo (escala 0-100, MLR)
+PASSOU  MLR: estimador sugerido e ajuste robusto bom
+      modelo   cfi  rmsea delta_cfi delta_rmsea p_dif_qui2
+1 configural 0.995 0.0237        NA          NA         NA
+2    metrica 0.989 0.0312  -0.00621     0.00757      0.044
+3    escalar 0.992 0.0243   0.00297    -0.00694      0.844
+4    estrita 0.989 0.0255  -0.00278     0.00118      0.184
+PASSOU  MLR: invariância contínua roda os 4 passos sem rejeição
+== TRI: modelo de resposta graduada (Samejima, 1969) e DIF
+PASSOU  discriminações recuperadas (r > .85)
+PASSOU  M2 (C2) calculável, com RMSEA
+PASSOU  S-X2 por item com p-valor
+PASSOU  DIF plantado no item 1 detectado (p < .01)
+PASSOU  itens sem DIF (2 e 3) não são acusados (p > .01)
+== Escore somado: paralelo contra congenérico (checar_escore_somado, v1.3)
+PASSOU  S-01 âncora McNeish e Wolf (2020): congenérico de 1 fator χ²(9) = 115,37, CFI = .81, RMSEA = .20 [.17, .23]
+PASSOU  S-02 âncora: cargas padronizadas do congenérico = Tabela 2 do artigo (.82 .85 .79 .17 .18 .26)
+PASSOU  S-03 âncora: paralelo de 1 fator CFI = .45, RMSEA = .23 [.21, .25], SRMR do Mplus = .24; restrições da soma rejeitadas
+PASSOU  S-04 âncora: modelo do artigo para subescalas (2 fatores, cargas 1, erros iguais dentro da subescala, sem covariância) dá χ²(17) = 55,54 e diferença χ²(9) = 40,80
+PASSOU  S-05 subescalas do artigo testadas uma a uma: 4 gl por subescala (paralelo de 3 itens contra congenérico saturado), decisão por subescala e nota da covariância
+PASSOU  S-06 subescala Verbal: cargas padronizadas quase iguais (amplitude < .06), mas o paralelo é rejeitado; a função mostra as duas coisas
+== Escore somado: verdade conhecida
+PASSOU  S-07 paralelo verdadeiro (n = 600, MLR): nenhuma das três comparações rejeita (p > .01) e o aviso de poder sai
+PASSOU  S-08 tau-equivalente verdadeiro (cargas iguais, erros diferentes): cargas iguais não rejeitadas, erros iguais rejeitados, paralelo rejeitado
+PASSOU  S-09 congenérico verdadeiro (cargas .9 a .3): paralelo rejeitado (p < .001), recomendação de SEM ou escore fatorial com Croon
+PASSOU  S-10 ordinal (4 categorias, WLSMV theta): cargas iguais verdadeiras não rejeitadas, desiguais rejeitadas; método satorra.2000; uma comparação só
+PASSOU  S-11 dois itens: contínuo testa só as variâncias residuais (1 gl); ordinal fica sem teste, com aviso e frase que não afirma nada
+PASSOU  S-12 método lido do cabeçalho do lavTestLRT com aspas retas ou curvas (locale UTF-8 usa dQuote)
+PASSOU  S-13 ausentes: linha sem nenhum item sai (n_excluidos), FIML mantém as parciais; item constante e escala de 1 item param com mensagem
+PASSOU  S-14 frase em inglês com decimal = ',' e frase em português com a referência do método
+PASSOU  S-14b itens com até 7 valores distintos viram ordinais por padrão (WLSMV, Satorra, 2000); ordinal = FALSE ou estimador da família ML volta ao contínuo
+PASSOU  S-15 textos sem travessão nem palavras vetadas; tabelas só com agregados (nenhuma com 30 linhas ou mais)
+PASSOU  S-16 tabela_ajuste com ML e FIML: versão robusta traz o χ² padrão (antes saía NA)
+== Redes (bootnet) e EGA
+Mensagen de aviso:
+In EBICglassoCore(S = S, n = n, gamma = gamma, penalize.diagonal = penalize.diagonal,  :
+  A dense regularized network was selected (lambda < 0.1 * lambda.max). Recent work indicates a possible drop in specificity. Interpret the presence of the smallest edges with care. Setting threshold = TRUE will enforce higher specificity, at the cost of sensitivity.
+PASSOU  arestas dentro do fator mais fortes que entre fatores
+Note: bootnet will store only the following statistics:  strength
+PASSOU  coeficiente CS de força calculado (0 a .75)
+Registered S3 method overwritten by 'car':
+  method           from
+  na.action.merMod lme4
+PASSOU  bootEGA recupera 3 dimensões (mediana)
+PASSOU  estabilidade de item calculada para os 12 itens
+== Comparação de redes (NCT)
+PASSOU  NCT entre grupos iguais: estrutura não difere (p > .01)
+== v1.4: índices do modelo bifator (Rodriguez, Reise & Haviland, 2016)
+PASSOU  bifator: ωH, ωT, ECV e PUC iguais à fórmula com as cargas populacionais (tol. 1e-5)
+PASSOU  bifator: ωHS da subescala 2 = (Σλs)² / soma da submatriz; H do geral = 1 / (1 + 1/Σ[λ²/(1 - λ²)]) (tol. 1e-5)
+PASSOU  bifator: FD = raiz de diag(Λ' Σ^-1 Λ) com fatores ortogonais (tol. 1e-5)
+PASSOU  bifator igual ao BifactorIndicesCalculator::bifactorIndices (ECV, PUC, ω, ωH, H, FD, ARPB, I-ECV; tol. 1e-6)
+PASSOU  bifator: modelo com fatores correlacionados para com mensagem de ortogonalidade
+Mensagen de aviso:
+lavaan->lav_model_vcov():  
+   Could not compute standard errors! The information matrix could not be 
+   inverted. This may be a symptom that the model is not identified. 
+PASSOU  bifator: ECV .73 e PUC .73 levam à frase de unidimensionalidade essencial; H dos específicos < .70 vira aviso
+
+== Resumo
+76 de 76 testes passaram em 40 s
+Registered S3 methods overwritten by 'MANOVA.RM':
+  method   from     
+  plot.RM  SimDesign
+  print.RM SimDesign
+Registered S3 methods overwritten by 'bnlearn':
+  method   from
+  print.bn sna 
+  plot.bn  sna 
+  coef.bn  sna 
+                    R                lavaan              semTools 
+              "4.6.1"               "0.7.3"              "0.5.10" 
+                 mirt               bootnet                qgraph 
+               "1.48"               "1.9.1"              "1.10.1" 
+               EGAnet NetworkComparisonTest                Boruta 
+              "2.4.1"               "2.2.4"              "10.0.0" 
+                psych                   car                  afex 
+              "2.6.9"               "3.1.5"               "1.5.1" 
+              emmeans            effectsize              lmerTest 
+              "2.0.4"               "1.0.3"               "3.2.1" 
+                 lme4                 pwrss                   pwr 
+              "2.0.6"               "1.3.1"               "1.3.0" 
+                 pROC               geepack               metafor 
+             "1.19.1"              "1.3.13"               "5.2.1" 
+              heplots           onewaytests               rstatix 
+              "1.8.6"                 "3.1"               "1.1.0" 
+                ppcor                lmtest              sandwich 
+                "1.1"              "0.9.40"               "3.1.3" 
+                 boot                  MASS           GPArotation 
+             "1.3.32"              "7.3.65"            "2026.8.2" 
+         networktools                   mgm              IsingFit 
+              "1.6.0"              "1.2.15"                 "0.4" 
+                poLCA                mclust              survival 
+            "1.6.0.2"               "6.1.3"               "3.8.6" 
+               rankFD              nparcomp                nparLD 
+              "0.1.1"                 "3.0"               "2.3.3" 
+            MANOVA.RM               netmeta                  meta 
+              "0.6.0"               "3.7.0"               "8.5.0" 
+              bnlearn        thurstonianIRT                  norm 
+              "5.2.1"              "0.12.5"            "1.0.11.1" 
+                 nnet               ordinal              EFA.MRFA 
+             "7.3.20"           "2026.7.26"               "1.1.2" 
+                 mice          graphicalVAR                 mlVAR 
+             "3.19.0"               "0.4.1"               "0.7.3" 
+               mokken               mirtCAT           strucchange 
+              "3.1.2"                "1.14"               "1.6.0" 

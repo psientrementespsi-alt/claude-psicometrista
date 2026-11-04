@@ -1,0 +1,19 @@
+Houve 50 ou mais avisos (use warnings() para ver os primeiros 50)
+PASSOU  BF do t independente (JZS) = Monte Carlo independente da verossimilhança marginal (erro relativo < 1%)
+Houve 50 ou mais avisos (use warnings() para ver os primeiros 50)
+PASSOU  BF do t de uma amostra = Monte Carlo (erro relativo < 1%)
+PASSOU  BF do t: prior mais larga favorece H0 quando o efeito é pequeno (BF10 cai de r = .707 para r = sqrt(2))
+PASSOU  BF da correlação (prior uniforme) próximo da aproximação de Jeffreys (erro relativo < 1%)
+PASSOU  BayesFactor: ttestBF igual (tol. 1e-4 relativa)
+PASSOU  BayesFactor: correlationBF (rscale = 1, beta(1, 1) = uniforme) igual (tol. 1e-3 relativa)
+PASSOU  DIF 2PL: LR igual ao da regressão logística com glm (tol. 1e-6)
+PASSOU  DIF 2PL: acha os 3 itens plantados (uniforme, não uniforme, acerto ao acaso) sem falso positivo
+PASSOU  DIF 3PLc: 3 gl por item, c em [0, 1] e itens plantados detectados
+PASSOU  difNLR (method = 'mle', 2PL): mesmas estatísticas LR (tol. 1e-3)
+PASSOU  Angoff: corte = média das somas por juiz e EP = DP/sqrt(J)
+PASSOU  Angoff: julgamento ausente ou fora de [0, 1] é recusado
+PASSOU  Bookmark: P(local) = RP em todos os itens e caderno em ordem crescente
+PASSOU  Bookmark: corte = mediana dos thetas das páginas marcadas
+PASSOU  Bookmark com ajuste do mirt: escore esperado no corte entre 0 e o número de itens
+
+Total evals_v21 2.1.0: 15 | Passaram: 15 | Falharam: 0

@@ -1,0 +1,116 @@
+== imputacao_multipla (mice)
+PASSOU  estimativa, EP, gl e p iguais ao mice::pool (Rubin com gl de Barnard-Rubin; 1e-8)
+PASSOU  FMI igual ao mice::pool e R² combinado igual ao pool.r.squared (1e-8)
+PASSOU  ausência MAR ligada a z: a inclinação de y em x (verdadeira .5 + .3 × .6 = .68) fica perto da verdade com a imputação (tol. .08)
+PASSOU  aviso quando m é menor que a % de casos incompletos (White et al., 2011)
+PASSOU  logística: OR combinado = exp(B) combinado
+== rede_temporal (Isvoranu et al., 2022, cap. 10)
+PASSOU  N = 1: PDC e PCC iguais à chamada direta do graphicalVAR (1e-12)
+PASSOU  N = 1: recupera a rede temporal simulada (r > .90 com a PDC verdadeira)
+PASSOU  destendenciar detecta a tendência linear plantada (p < .001) e a retira antes da rede
+PASSOU  N > 1: efeitos fixos temporais e p iguais ao mlVAR direto (1e-10)
+PASSOU  N > 1: recupera os efeitos fixos simulados (r > .95)
+PASSOU  N > 1: redes contemporânea e entre pessoas presentes
+== escala_mokken (Meijer & Tendeiro, 2018, Wiley, cap. 15)
+$Hij
+                reliable    honest unscrupulous* deceitful* unintelligent*
+reliable       0.0000000 0.5283413     0.2416005  0.3305052    0.131556907
+honest         0.5283413 0.0000000     0.2495038  0.2823997    0.139434657
+unscrupulous*  0.2416005 0.2495038     0.0000000  0.3434102    0.144922005
+deceitful*     0.3305052 0.2823997     0.3434102  0.0000000    0.101818342
+unintelligent* 0.1315569 0.1394347     0.1449220  0.1018183    0.000000000
+obnoxious*     0.2728026 0.1617533     0.2392134  0.3212575    0.201069599
+thankless*     0.1834544 0.1604480     0.1213435  0.3361798    0.132836464
+unfriendly*    0.2466508 0.1919252     0.2407154  0.3992540    0.111803716
+dependable     0.7166298 0.5520707     0.2293779  0.3171419    0.077037252
+cruel*         0.1157310 0.1410586     0.2913782  0.4230774    0.005422593
+               obnoxious* thankless* unfriendly* dependable      cruel*
+reliable        0.2728026  0.1834544   0.2466508 0.71662978 0.115731003
+honest          0.1617533  0.1604480   0.1919252 0.55207072 0.141058627
+unscrupulous*   0.2392134  0.1213435   0.2407154 0.22937792 0.291378174
+deceitful*      0.3212575  0.3361798   0.3992540 0.31714187 0.423077421
+unintelligent*  0.2010696  0.1328365   0.1118037 0.07703725 0.005422593
+obnoxious*      0.0000000  0.3385067   0.4069712 0.25312035 0.372140886
+thankless*      0.3385067  0.0000000   0.4299537 0.22713075 0.266747228
+unfriendly*     0.4069712  0.4299537   0.0000000 0.25403810 0.430481257
+dependable      0.2531203  0.2271307   0.2540381 0.00000000 0.117530380
+cruel*          0.3721409  0.2667472   0.4304813 0.11753038 0.000000000
+
+$se.Hij
+                 reliable     honest unscrupulous* deceitful* unintelligent*
+reliable       0.00000000 0.05154898    0.06777966 0.05504803     0.05652238
+honest         0.05154898 0.00000000    0.07086150 0.05717081     0.05480678
+unscrupulous*  0.06777966 0.07086150    0.00000000 0.05921766     0.06048795
+deceitful*     0.05504803 0.05717081    0.05921766 0.00000000     0.05329083
+unintelligent* 0.05652238 0.05480678    0.06048795 0.05329083     0.00000000
+obnoxious*     0.05880168 0.05713158    0.05344830 0.04969254     0.05144302
+thankless*     0.05635043 0.05819889    0.05073174 0.05410786     0.05116834
+unfriendly*    0.06112458 0.07358986    0.06278346 0.05268164     0.05601462
+dependable     0.04577079 0.05411890    0.06632108 0.05286177     0.05859870
+cruel*         0.06949164 0.07987270    0.06055804 0.05477066     0.05518779
+               obnoxious* thankless* unfriendly* dependable     cruel*
+reliable       0.05880168 0.05635043  0.06112458 0.04577079 0.06949164
+honest         0.05713158 0.05819889  0.07358986 0.05411890 0.07987270
+unscrupulous*  0.05344830 0.05073174  0.06278346 0.06632108 0.06055804
+deceitful*     0.04969254 0.05410786  0.05268164 0.05286177 0.05477066
+unintelligent* 0.05144302 0.05116834  0.05601462 0.05859870 0.05518779
+obnoxious*     0.00000000 0.05230609  0.05216335 0.05835405 0.06074865
+thankless*     0.05230609 0.00000000  0.05559267 0.06055894 0.06601219
+unfriendly*    0.05216335 0.05559267  0.00000000 0.05324671 0.06458694
+dependable     0.05835405 0.06055894  0.05324671 0.00000000 0.07651133
+cruel*         0.06074865 0.06601219  0.06458694 0.07651133 0.00000000
+
+$Hi
+                    [,1]
+reliable       0.3038656
+honest         0.2651096
+unscrupulous*  0.2360455
+deceitful*     0.3191367
+unintelligent* 0.1160265
+obnoxious*     0.2879527
+thankless*     0.2454761
+unfriendly*    0.3085198
+dependable     0.2994265
+cruel*         0.2522276
+
+$se.Hi
+                     [,1]
+reliable       0.02948069
+honest         0.03404712
+unscrupulous*  0.03413665
+deceitful*     0.02780796
+unintelligent* 0.03284881
+obnoxious*     0.02792349
+thankless*     0.02969593
+unfriendly*    0.03181969
+dependable     0.03161582
+cruel*         0.03570697
+
+$H
+          [,1]
+[1,] 0.2635151
+
+$se.H
+[1] 0.02014774
+
+PASSOU  H, Hi e EP iguais ao mokken::coefH (1e-12)
+PASSOU  partição da AISP igual ao mokken::aisp
+PASSOU  H = .26 no acl (10 primeiros itens): classe 'não escalável' e aviso de Hi < ,30
+PASSOU  dados de Guttman perfeitos dão H = 1
+== simular_cat (Martinková & Hladká, 2023, 10.2.6)
+PASSOU  número médio de itens igual ao mirtCAT direto com o mesmo modelo e desenho
+PASSOU  CAT usa menos itens que o banco e o θ correlaciona > .90 com o teste completo
+PASSOU  max_itens limita o teste
+== normas (Petersen, 2024, cap. 1)
+PASSOU  percentil = dplyr::percent_rank do livro: (posto mínimo - 1)/(n - 1)
+PASSOU  z, T = 50 + 10z, escalar = 10 + 3z e padrão = 100 + 15z
+PASSOU  estanino pelas faixas de Petersen (4, 11, 23, 40, 60, 77, 89, 96%)
+PASSOU  percentil médio e estratos: cada estrato com a própria média
+== equivalencia_ajuste (Counsell et al., 2020; Petersen, 2024, 15.10.3.5)
+PASSOU  os três exemplos do livro: Fml .2759/.2926/.02002, ε0 .1536/.1728/.0192, λ 39.48/44.41/4.934, p .147/.076/.1375
+== invariancia_continua (Merkle & Zeileis, 2013)
+PASSOU  categórico (escola, LMuo): igual ao strucchange::sctest direto (1e-10)
+PASSOU  carga que cresce com a idade é detectada (p < .001) e a invariante não (p > .05)
+PASSOU  ordinal usa WDMo e recusa moderador com ausentes
+
+evals_v17: 26/26 passaram

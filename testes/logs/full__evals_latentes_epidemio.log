@@ -1,0 +1,24 @@
+== Perfis latentes (mclust, modelo EEI = modelo 1 do tidyLPA)
+PASSOU  LPA: BIC mínimo na solução de 3 perfis simulada
+PASSOU  LPA: AIC = -2LL + 2p, BIC = -2LL + p ln n, SABIC = -2LL + p ln((n + 2)/24), p = (k - 1) + vk + v no EEI
+Registered S3 method overwritten by 'tidyLPA':
+  method    from   
+  print.LRT tidySEM
+PASSOU  LPA igual ao tidyLPA (estimate_profiles, models = 1): LL, BIC, entropia, prob_min, n_min (tol. 1e-6)
+PASSOU  LPA: entropia = 1 + Σ z ln z / (n ln K) na solução de 3 perfis (tol. 1e-8)
+== Classes latentes (poLCA)
+PASSOU  LCA: BIC mínimo em 2 classes; categorias 0/1 recodificadas para 1/2 sem perder o rótulo nas probabilidades
+PASSOU  LCA: AIC e BIC iguais aos do poLCA para 2 classes (tol. 1e-6)
+PASSOU  LCA: LMR entre 1 e 2 classes pela fórmula do tidyLPA::calc_lrt (tol. 1e-8)
+PASSOU  privacidade: impressão sem a classe de cada pessoa (saída curta)
+== Razão de prevalência (Poisson robusta) e sobrevida
+PASSOU  RP: EP robusto = GEE independente com um caso por cluster (geepack) ou sanduíche HC0 à mão (tol. 1e-8)
+PASSOU  RP: estimativa pontual = exp(coeficiente da Poisson) e IC de Wald exponenciado
+PASSOU  sobrevida (lung, survival): log-rank χ²(1) = 10,33 e HR de sex = 0,588 [0,424; 0,816]
+PASSOU  sobrevida: medianas de Kaplan-Meier 270 (homens) e 426 (mulheres), e tábua em 180 e 365 dias
+PASSOU  sobrevida: riscos proporcionais conferidos (cox.zph) e frase com log-rank e HR
+
+== Resumo
+13 de 13 testes passaram em 5 s
+        R    mclust     poLCA   tidyLPA  survival   geepack 
+  "4.6.1"   "6.1.3" "1.6.0.2"   "2.0.2"   "3.8.6"  "1.3.13" 

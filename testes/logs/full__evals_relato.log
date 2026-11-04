@@ -1,0 +1,33 @@
+PASSOU  24 casos: um teste extraido por caso
+PASSOU  inconsistencias iguais as do statcheck nos 24 casos
+PASSOU  erros grosseiros iguais aos do statcheck nos 24 casos
+PASSOU  portugues: virgula decimal, χ², sinal de menos tipografico e italico de markdown (6 testes, nenhum erro)
+PASSOU  portugues: erro grosseiro detectado com virgula decimal
+PASSOU  arredondamento: t(110) = 2.15 com p = .034 tambem e consistente (intervalo de arredondamento)
+PASSOU  p relatado zero e erro (pZeroError do statcheck)
+PASSOU  perfis: apa7_relato tira zero de beta e mantem em RMSEA; apa7_estrito mantem em beta; psicometria_r tira em RMSEA
+PASSOU  p: limites < .001 e > .999, e zero negativo nao vira -0.00
+PASSOU  ptbr: virgula decimal, IC com ponto e virgula; perfis de periodico herdam e saem nao verificados
+PASSOU  perfil personalizado altera so o pedido
+PASSOU  frases_apa no perfil apa7_relato: 6 testes reconhecidos (t, r, F, 2 coeficientes, chi2), nenhum inconsistente
+PASSOU  frases_apa no perfil apa7_ptbr: 6 testes reconhecidos (t, r, F, 2 coeficientes, chi2), nenhum inconsistente
+PASSOU  frases_apa no perfil apa7_ptbr_sem_zero: 6 testes reconhecidos (t, r, F, 2 coeficientes, chi2), nenhum inconsistente
+PASSOU  frases_apa: p da regressao bate com summary(lm)
+PASSOU  frases_apa lavaan MLR: usa indices robustos e chi2 passa no auditor
+PASSOU  frases_apa lavaan: modelo saturado (gl = 0) e recusado
+PASSOU  frases_apa glm: relata OR, EP, z e p para cada preditor
+boundary (singular) fit: see help('isSingular')
+PASSOU  frases_apa lmer: relata ICC, variancia do intercepto e residuo
+PASSOU  frases_apa metafor: relata efeito combinado, IC, heterogeneidade Q e I2
+PASSOU  frases_apa roc: relata AUC e ponto de corte de Youden
+PASSOU  efeitos: frase com d e IC passa; F sem efeito nem IC e marcado
+PASSOU  d reconstituido de t (independentes e pareado) e eta2p de F
+PASSOU  .docx: partes OOXML presentes, tres linhas (6 bordas em 3 colunas), escape de &, sem borda vertical
+PASSOU  tabela de correlacoes relata n por par quando ha ausentes
+PASSOU  ao vivo: o statcheck do repositorio da os mesmos erros que a tabela de referencia
+PASSOU  Lakens (2013), exemplo dos filmes: t(18) = 2,52 com 10 e 10 da d_s = 1,13 e g_s = 1,08
+PASSOU  Lakens (2013), eq. 20: omega2p = ,21 com MS 5 e 0,789, gl 1 e N = 20 (F = 6,34)
+PASSOU  frases_rede: CS do exemplo de Epskamp et al. (2018), forca ,44 abaixo de ,50 e intermediacao ,05 abaixo de ,25
+PASSOU  frases_apa(bootnetResult): nos, N, arestas e gama saem do objeto
+
+Total relato-estatistico 1.5.0: 30 | Passaram: 30 | Falharam: 0

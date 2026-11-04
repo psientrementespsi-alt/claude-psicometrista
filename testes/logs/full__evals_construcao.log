@@ -1,0 +1,103 @@
+== CVC de Hernández-Nieto (curso, página 'Coeficiente de Validade de Conteúdo (CVC)')
+PASSOU  notas (5, 5, 4): média 4,67, CVCi .933, CVCc .896 (tol. .0005)
+PASSOU  item 1 da aula: clareza (4, 4, 4) = .763, inadequada; pertinência (5, 4, 5) e relevância .896, adequadas
+PASSOU  Pe por número de juízes: 3 -> .0370, 4 -> .0039 (a aula transcreve .039 por engano), 2 -> .25
+PASSOU  2 juízes com nota máxima: CVCc = .75 (inadequado) e aviso de mínimo de 3 juízes
+PASSOU  CVC total = média dos CVCi menos a média dos Pe (= média dos CVCc), por critério
+PASSOU  piloto com 30 participantes: Pe desprezível, CVC = média / 5 (curso, página do CVC com população-alvo)
+PASSOU  item adequado só se passa nos três critérios (lista de itens adequados)
+== IVC (curso, página 'Índice de Validade de Conteúdo (IVC)'; Polit & Beck, 2006)
+PASSOU  (3, 4, 2) -> I-IVC .67, inaceitável
+PASSOU  (3, 4, 2, 3, 4) -> .80, aceitável no curso e não em Polit e Beck (5 juízes pedem 1,00)
+PASSOU  (4, 2, 3, 1, 2) -> .40, inaceitável
+PASSOU  S-IVC/Ave = média dos I-IVC (.733) e S-IVC/UA = 1/3 (tol. .0005)
+PASSOU  kappa modificado com 4 de 5: Pc = .15625, k* = .763 (conta à mão; tol. .0005)
+PASSOU  6 juízes, 5 favoráveis: .83 passa nos dois critérios (Polit e Beck: >= .78 com 6 ou mais)
+== RVC de Lawshe (curso, página 'Razão de Validade de Conteúdo (RVC)'; Ayre & Scally, 2014)
+PASSOU  valores críticos da aula para 5 a 10 juízes: Ne 5, 6, 7, 7, 8, 9
+PASSOU  RVC crítico da aula: 1,00; 1,00; 1,00; .75; .78; .80 (tol. .005)
+PASSOU  método binomial exato de 5 a 40 juízes: P(X >= Ne) <= .05 < P(X >= Ne - 1)
+PASSOU  exemplos da aula com 10 juízes: Ne 9 -> .80 atende; Ne 8 -> .60 não; Ne 2 -> -.60
+PASSOU  4 juízes: sem valor crítico (NA) e aviso de mínimo de 5
+== V de Aiken (Aiken, 1985; IC de Penfield & Giacobbi, 2004)
+PASSOU  (5, 5, 4, 4, 5) em 1 a 5 -> V = 18 / 20 = .90
+PASSOU  IC escore igual ao intervalo de Wilson do prop.test (equivalência; tol. 1e-8)
+== AFE: estrutura ordinal conhecida (3 fatores, 4 itens cada, carga .70, r = .30, 4 categorias)
+PASSOU  itens de 4 categorias tratados como ordinais: correlação policórica
+PASSOU  KMO geral e por item iguais ao psych::KMO na mesma matriz (tol. 1e-10)
+PASSOU  Bartlett igual ao psych::cortest.bartlett (χ², gl e p; tol. 1e-6)
+PASSOU  Bartlett pela fórmula: -(n - 1 - (2p + 5)/6)·ln|R| com gl = p(p - 1)/2 (tol. 1e-8)
+PASSOU  análise paralela por permutação (policórica) recupera 3 fatores nas duas bases
+PASSOU  EGA (EGAnet) recupera 3 dimensões
+PASSOU  semente fixa: análise paralela reproduzível e sem mexer no gerador do usuário
+PASSOU  minres + oblimin: cada bloco de 4 itens carrega no mesmo fator, e fatores diferentes entre blocos
+PASSOU  cargas principais recuperadas (.70 ± .10) e cargas secundárias abaixo de .15
+PASSOU  correlações entre fatores recuperadas (.30 ± .10)
+PASSOU  nenhum alerta de carga cruzada ou baixa na estrutura limpa
+PASSOU  variância por fator soma a comunalidade total (tol. 1e-10)
+PASSOU  extração WLSMV (lavaan::efa) concorda com minres nas cargas (diferença máxima < .05) e traz ajuste
+PASSOU  número de fatores pela análise paralela quando n_fatores = NULL
+== AFE: estrutura contínua (psych::sim.structure) e equivalência com psych::fa.parallel
+PASSOU  itens contínuos: correlação de Pearson e 3 fatores
+PASSOU  mesma decisão do psych::fa.parallel (componentes, Pearson)
+PASSOU  cargas recuperadas em dado contínuo (.70 ± .10)
+== AFE: alertas por item (carga cruzada, carga baixa, MSA baixo) e escala 0-100
+PASSOU  escala 0-100 tratada como contínua (Pearson), como no PBAT
+PASSOU  2 fatores pela análise paralela
+PASSOU  item com .50 nos dois fatores marcado como carga cruzada
+PASSOU  item com carga .15 e item de ruído marcados como carga baixa
+PASSOU  item de ruído com o menor MSA, abaixo de .50, e aviso
+== Privacidade, ausentes e relato
+PASSOU  deleção listwise contada em n_excluidos (3 casos)
+PASSOU  nenhuma linha de participante no resultado: tabelas só com linhas por item, fator ou índice
+PASSOU  print de todas as funções não falha e não passa de 80 linhas
+PASSOU  frase APA da AFE com KMO, Bartlett, extração, rotação, variância e correlações entre fatores
+PASSOU  frase APA em inglês com vírgula decimal
+PASSOU  um fator: sem rotação e sem correlação entre fatores
+== Correções da revisão v1.1.0: dependência linear exata (C7)
+PASSOU  C7 escore total junto dos itens: afe_adequacao e afe param com mensagem que nomeia 'total' (posto 5 de 6 pelo qr)
+PASSOU  C7 item duplicado e item invertido (7 - A2, ordinal): param na checagem dos dados brutos, antes da policórica
+PASSOU  C7 n menor ou igual ao número de itens: mensagem própria, sem atribuir a dependência entre itens
+PASSOU  C7 policórica não positiva definida sem dependência exata: suavizada com aviso; KMO igual ao do psych (tol. 1e-10)
+== Correções da revisão v1.1.0: frase de fatorabilidade e caso Heywood (C12)
+PASSOU  C12 KMO .45 e Bartlett p = .455: a frase diz 'não foi indicada' com os números (psych confere KMO e χ²)
+PASSOU  C12 KMO .53 (miserável) com Bartlett significativo: frase de não indicação e aviso da faixa miserável
+PASSOU  C12 KMO >= .60 e Bartlett significativo (estrutura simulada, KMO .83): frase 'foi indicada'
+PASSOU  C12 caso Heywood (λ1 de h1 acima de 1 pela conta à mão): alerta, aviso e frase de solução imprópria em pt e en
+PASSOU  C12 solução sem Heywood continua com a frase descritiva
+== Correções da revisão v1.1.0 com o banco G Factor do JASP (C7 e C12)
+PASSOU  C7 G Factor com todas as colunas numéricas: para e nomeia Age e as colunas Residuals.* (R² = 1 no lm)
+PASSOU  C12 G Factor, 2 fatores: Heywood em Weight (carga 1.001 no psych::fa) e frase de solução imprópria
+== v1.4: Hull e MAP no número de fatores (Lorenzo-Seva, Timmerman & Kiers, 2011; Velicer, 1976)
+PASSOU  Hull-CFI recupera a estrutura simulada: 3 fatores (contínuo), 4 fatores (contínuo) e 3 fatores (ordinal, policórica)
+PASSOU  tabela do Hull: 0 a J fatores, J = paralela + 1, gl do modelo nulo p(p - 1)/2 e CFI = 0 na solução nula
+PASSOU  CFI de cada solução = conta à mão com stats::factanal (F = objetivo da ML, qui2 = (N - 1)F; tol. 1e-8)
+PASSOU  Hull igual ao EFAtools::HULL (ML, CFI e CAF, mesmo J): CFI e st com tol. 1e-6, mesma escolha
+PASSOU  MAP igual ao psych::vss (média dos quadrados das parciais, tol. 1e-12) e recupera 3 componentes
+PASSOU  MAP com m = 0: média dos quadrados das correlações fora da diagonal (Velicer, 1976)
+PASSOU  Hull não roda com menos de 6 itens (aviso) e a paralela segue
+PASSOU  n_teorico maior que a paralela sobe o teto do Hull (J = n_teorico + 1) e valor inválido para
+PASSOU  frase APA cita paralela, Hull e MAP; discordância entre paralela e Hull vira aviso
+== v1.4: teste-reteste e concordância entre avaliadores
+PASSOU  Shrout & Fleiss (1979): ICC(1,1) .17, ICC(2,1) .29, ICC(3,1) .71, ICC(1,4) .44, ICC(2,4) .62, ICC(3,4) .91 (tol. .005)
+PASSOU  teste-reteste: ICC(A,1) = conta à mão pelos quadrados médios de McGraw e Wong (1996) (tol. 1e-10)
+PASSOU  teste-reteste: EPM = DP(todas) x raiz(1 - ICC), MMD95 = 1,96 x raiz(2) x EPM, Bland-Altman = média ± 1,96 DP das diferenças
+PASSOU  teste-reteste com mudança média (+5 pontos): aviso de mudança entre ocasiões; frase com ICC(A,1) e régua de Koo e Li
+PASSOU  kappa de Cohen = .40 na tabela [[20, 5], [10, 15]] (po .70, pe .50; tol. 1e-12)
+PASSOU  kappa ponderado quadrático = conta à mão (1 - soma w.o / soma w.e) numa tabela 3 x 3
+PASSOU  kappa de Fleiss = .210 no exemplo resolvido (10 casos, 14 avaliadores; tol. .0005) e IC bootstrap contém a estimativa
+PASSOU  irr confere: kappa2, kappa2 quadrático, kappam.fleiss e icc (A,1) e (A,k) (tol. 1e-10)
+PASSOU  Fleiss com tipo ordinal avisa que trata categorias como nominais
+== v1.4: análise clássica de itens e confiabilidade em EMA
+PASSOU  itens: RIT, RIR e alfa sem o item iguais ao psych::alpha (raw.r, r.drop, alpha.drop; tol. 1e-12)
+PASSOU  itens: dificuldade corrigida = (média - mín)/(máx - mín) e ULI = diferença entre o terço superior e o inferior do total
+PASSOU  itens: item invertido sem recodificar gera aviso de RIR negativo
+PASSOU  EMA: coeficientes iguais ao psych::multilevel.reliability (tol. 1e-12)
+PASSOU  EMA: Rc = σ²(pessoa × tempo) / [σ²(pessoa × tempo) + σ²(resíduo)/itens] pelos componentes; perto do populacional .887 (tol. .05)
+
+== Resumo
+82 de 82 testes passaram em 40 s
+          R       psych GPArotation      lavaan      EGAnet    EFAtools 
+    "4.6.1"     "2.6.9"  "2026.8.2"     "0.7.3"     "2.4.1"     "1.1.0" 
+        irr 
+     "0.85" 

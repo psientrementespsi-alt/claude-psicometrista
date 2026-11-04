@@ -1,0 +1,14 @@
+== Aquiescência (curso, módulo de controle de aquiescência; Maydeu-Olivares & Coffman, 2006)
+PASSOU  índice = média das respostas sem inverter menos o ponto médio; correlação com a aquiescência simulada > .85
+PASSOU  interceptos randômicos recuperam a variância de aquiescência (.20 na métrica padronizada; tol. .03) e ajustam melhor que o modelo sem controle
+PASSOU  modelo de interceptos randômicos = sintaxe do curso no lavaan (mesmo qui-quadrado escalonado; tol. 1e-6)
+PASSOU  MIMIC do curso (itens no índice, fatores ortogonais ao índice): caminhos positivos em todos os itens, dos dois polos
+PASSOU  recentralização sem arredondar: média de cada pessoa = 0 (tol. 1e-12); com arredondar, valores inteiros em [-2, 2]
+PASSOU  análise paralela nos dados recentralizados sugere os 3 fatores simulados
+PASSOU  escala desbalanceada gera aviso; fator sem item negativo para com mensagem
+PASSOU  privacidade: a impressão não traz linha de participante (nada de 1500 linhas, nenhum valor individual do índice)
+
+== Resumo
+8 de 8 testes passaram em 6 s
+      R  lavaan   psych 
+"4.6.1" "0.7.3" "2.6.9" 

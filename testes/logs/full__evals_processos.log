@@ -1,0 +1,75 @@
+== Âncora: mediação simples, Presumed Media Influence (md6:205-223)
+PASSOU  a = 0,477; b = 0,506; c = 0,496; c' = 0,254; ab = 0,241 (tol .0005; md6:205-207)
+PASSOU  p de b < ,001; p de c = ,077; p de c' = ,322 (tol .0005; md6:205, 217)
+PASSOU  sem arredondar: c' = 0,2544, ab = 0,2413, c = 0,4957 (tol .00005) e c = c' + ab exata (md6:207)
+PASSOU  Sobel z = 1,89 (tol .005), p = ,059 (tol .0005), só como comparação (md6:219)
+        IC bootstrap obtido [0.0054; 0.5193]; livro [0,006; 0,521] e [0,023; 0,541] em outra semente
+PASSOU  IC 95% bootstrap percentílico, 10.000 reamostras, semente 2026: [0,006; 0,521] (tol Monte Carlo .01; zero fora; md6:223)
+PASSOU  frase APA com IC bootstrap percentílico e sem rótulo completa/parcial (md6:227)
+== Âncora: moderação, Climate Change Disasters (md6:356-362)
+PASSOU  b1 = -0,562; b2 = 0,105; b3 = 0,201 (tol .0005; md6:356)
+PASSOU  p: b1 = ,011; b2 = ,006 (tol .0005); b3 < ,001 (md6:356)
+PASSOU  R² = ,246; ΔR² = ,048; f² = ,064 (tol .0005; md6:356)
+PASSOU  centralizado: b1 = 0,117; b3 = 0,201 e R² = ,246 inalterados; EP(b3) idêntico (md6:362, 443)
+PASSOU  efeitos condicionais -1 DP, média, +1 DP: -0,292, 0,117, 0,526 (tol .0005; md6:360)
+PASSOU  p dos efeitos condicionais: ,068; ,297; ,001 (tol .0005; md6:360)
+PASSOU  padrão descrito como inversão de sinal (md6:360)
+PASSOU  frase APA da moderação traz b3, ΔR² e f² do livro e as fronteiras de Johnson-Neyman
+== Âncora do curso (mesmo banco, valores de Hayes reproduzidos no curso)
+PASSOU  paralela: via Importance 0,203; via MediaInfluence 0,189; total 0,392; contraste 0,014 (tol .0005)
+PASSOU  paralela: IC do contraste inclui zero (curso 13c-5)
+PASSOU  B11: índice de mediação moderada pequeno (-0,00049) sai com sinal e 2 algarismos, não '0.000'
+PASSOU  serial: efeito Importance → MediaInfluence = 0,049 (tol .0005); indireto total = 0,392 como na paralela
+== Verdade conhecida em dados simulados
+PASSOU  mediação simples: a = .4, b = .3 -> ab perto de .12 (tol .03) e IC cobre .12
+PASSOU  mediação nula (a = 0): IC do indireto inclui zero
+PASSOU  moderação: b3 = .4 recuperado (tol .06); efeito em W = 1 perto de .9 (tol .08)
+PASSOU  Johnson-Neyman: |t| = t crítico em cada fronteira (tol 1e-8) e o zero de θ(W) = b1 + b3·W fica entre as duas fronteiras
+PASSOU  Johnson-Neyman: na grade, p < .05 exatamente nas regiões marcadas como significativas
+PASSOU  Johnson-Neyman: % de casos das regiões soma 100
+PASSOU  moderador categórico (3 níveis): inclinações .2/.5/.8 recuperadas (tol .08) e F com gl1 = 2
+PASSOU  serial: a1·d21·b2 = .5 × .4 × .3 = .06 recuperado (tol .02); três caminhos indiretos
+PASSOU  modelo 7: índice a3·b = .2 × .5 = .1 (tol .03); indireto em W = 1 perto de .25 (tol .04)
+PASSOU  modelo 14: índice a·b3 = .5 × .2 = .1 (tol .03)
+PASSOU  modelo 15: efeito direto condicional c'1 + c'3·W = .2 ± .25 recuperado (tol .07) e índice perto de .1 (tol .03)
+== Equivalência com outras implementações e identidades
+PASSOU  EP HC3 igual a sandwich::vcovHC(type = 'HC3') (tol 1e-10)
+PASSOU  Breusch-Pagan igual a lmtest::bptest (tol 1e-8)
+PASSOU  F da interação = t² do produto, clássico e HC3 (tol 1e-8)
+PASSOU  efeitos condicionais iguais a emmeans::emtrends (estimativa e EP, tol 1e-6)
+PASSOU  moderador categórico igual a emmeans::emtrends (tol 1e-6)
+PASSOU  IC percentílico igual a boot::boot + boot.ci(type = 'perc') com a mesma semente (tol 1e-10)
+PASSOU  serial: caminhos iguais aos do lavaan (modelo saturado, MV = MQO; tol 1e-6)
+PASSOU  covariáveis (numérica e fator): a, b, c', c iguais aos de lm (tol 1e-10), identidade fecha e n_excluidos = 2
+PASSOU  modelo 7: índice = a3·b da tabela e diferença entre indiretos condicionais = índice × ΔW (tol 1e-12)
+PASSOU  modelo 15: coeficientes da equação de Y iguais aos de lm com os dois produtos (tol 1e-10)
+PASSOU  modelo 14: índice = a·b3 com a e b3 de lm (tol 1e-10)
+PASSOU  valores_w = 'percentis': W sondada nos percentis 16, 50 e 84 (quantile tipo 7)
+PASSOU  X binário: indireto parcialmente padronizado = ab / DP_Y (tol 1e-12)
+== Comportamento da função
+PASSOU  a semente da análise não altera o gerador aleatório do usuário
+PASSOU  decimal = ',' gera vírgula decimal e ponto e vírgula no IC
+PASSOU  Y dicotômica é recusada com orientação para logística
+PASSOU  objeto pr_resultado com coluna 'principal' no efeito
+PASSOU  print sem linha de participante (nenhum valor bruto de y no print)
+        mediação simples, n = 300, 10.000 reamostras: 0.5 s
+PASSOU  bootstrap de 10.000 reamostras em menos de 10 s (n = 300)
+== Regressões da revisão CoVe (B1, B5, B10, B11)
+PASSOU  B1: célula de texto vazia sai por listwise em moderacao() (n = 112, 8 excluídos, W com 3 níveis, coeficientes = lm)
+PASSOU  B1: fator com nível vazio tem o mesmo resultado (n = 112, sem nível '')
+PASSOU  B1: X de texto binário com vazios funciona em mediacao() e mediacao_moderada() (2 excluídos, codificação 0/1)
+PASSOU  B5: com c' verdadeiro = 0, c' negativo e IC com zero nunca gera aviso de inconsistência; todo aviso tem c' com IC sem zero
+PASSOU  B5: mediação inconsistente verdadeira (ab = .25, c' = -.5) gera o aviso
+PASSOU  B10: bootstrap sequencial (n × reamostras > 2e7) avisa em $avisos, como a referência descreve
+PASSOU  B11: b3 = -0,0000089 e EP = 0,0000012 saem com sinal e tamanho (não '0,000'), com nota em $decisoes
+PASSOU  B11: casas só ampliam quando o valor arredondaria para zero; limite de IC perto de zero mantém o sinal
+== Correções da verificação final (achados G e H)
+PASSOU  G-03 moderação: W = escolaridade 1/2/3 numérica gera aviso (sugere factor()); W contínua não
+PASSOU  G-03 moderação: com W em fator o aviso some e o F conjunto (gl1 = 2) = anova(lm(y ~ x + W), lm(y ~ x * W)) (tol 1e-8)
+PASSOU  G-03 mediação: X = escolaridade 1/2/3 gera aviso; X 0/1 continua aceito sem aviso; covariável 1/2/3 também avisa
+PASSOU  G-03 mediação moderada: W = escolaridade 1/2/3 gera aviso; W contínua (s5$w) não
+PASSOU  G-11 reamostras: idioma = "en" com decimal = "," sai "1000 resamples" (não "1,000" ao lado de "0,xxx"); en/"." = "1,000"; pt/"," = "1.000"
+PASSOU  H-06 moderação e mediação moderada: nota "sem IC: não calculado" em $decisoes (também em inglês)
+
+== Resumo
+62 de 62 testes passaram em 8 s

@@ -1,0 +1,10 @@
+== v1.8.0: Confiabilidade Delta e Bootstrap Sanitizado
+PASSOU  ajustar_afc: chamada auto-contida suporta update() fora do escopo
+PASSOU  confiabilidade(metodo = 'delta'): executa em < 1s e gera CIs finitos
+PASSOU  confiabilidade(metodo = 'bootstrap'): sanitiza fit@call e conclui sem erro de escopo
+== v1.8.1: omega delta igual ao parametro definido escrito a mao
+PASSOU  continuos: omega_delta = compRelSEM e IC = parametro definido (tol. 1e-3)
+PASSOU  ordinais: omega_delta, EP e IC iguais ao parametro definido (tol. 1e-3) e IC contem omega_delta
+PASSOU  alfa: IC de Feldt igual ao psych::alpha.ci (tol. 1e-3)
+
+Total de testes v1.8: 6 | Passaram: 6 | Falharam: 0

@@ -1,0 +1,155 @@
+== Âncoras: Exam Anxiety (Vol. 2, caps. 8 a 10)
+PASSOU  r Revise × Exam = .397, IC [.220; .548] (md2:73; tol .0005)
+PASSOU  r Revise × Anxiety = -.709, IC [-.794; -.598] (md2:73)
+PASSOU  r Exam × Anxiety = -.441, IC [-.585; -.271] (md2:73)
+PASSOU  r² = 15.7%, 50.3%, 19.4% (md2:75; tol .05 p.p.)
+PASSOU  Spearman Revise × Anxiety ρ = -.622 ao lado do Pearson -.709 (md2:135)
+PASSOU  Shapiro-Wilk W = .804 (Revise) e .822 (Anxiety) (md2:127)
+PASSOU  frase APA com 3 casas como o parágrafo aprovado do livro: r(101) = -.441, p < .001, IC 95% [-.585, -.271] (md2:145-149)
+PASSOU  decimal = ",": r(101) = -,441; p < ,001; IC 95% [-,585; -,271] (idêntico a md2:145)
+PASSOU  simples: R = .397, R² = .157, R² aj = .149 (md2:239)
+PASSOU  simples: RMSE 23.93 vs DP do desfecho 25.94; F(1, 101) = 18.87 (md2:239)
+PASSOU  simples: intercepto 45.321; B = .567, EP .130, β .397, t 4.343, IC [.308; .826] (md2:237-241)
+PASSOU  múltipla: F(2, 100) = 13.18; R² = .209; aj = .193; RMSE 23.31; f² = .264 (md2:243)
+PASSOU  múltipla: Anxiety B = -.485 [-.863; -.107], β = -.321, p = .012 (md2:245)
+PASSOU  múltipla: Revise B = .241 [-.116; .599], β = .169, p = .184 (md2:245)
+PASSOU  múltipla: tolerância .497, VIF 2.01 (md2:247)
+PASSOU  múltipla: Durbin-Watson = 2.00 (md2:301)
+PASSOU  múltipla: Shapiro-Wilk dos resíduos W = .965, p = .008 (md2:301)
+PASSOU  frase APA da múltipla: F(2, 100) = 13.18, p < .001, 19.3% (R² ajustado = .193, f² = 0.264) (md2:319)
+PASSOU  β com zero à esquerda e B, IC e β com 3 casas, como md2:319 e md2:323: B = -0.485, IC 95% [-0.863, -0.107], β = -0.321
+PASSOU  hierárquica M1: R² = .000, F(1, 101) = 0.00, p = .963, aj = -.010, RMSE 26.07 (md2:395)
+PASSOU  hierárquica M2: R² = ΔR² = .159, F(1, 100) = 18.89, f² do bloco = .189 (md2:397)
+PASSOU  hierárquica M3: ΔR² = .050, F(1, 99) = 6.28, p = .014, f² = .063 (md2:399)
+PASSOU  hierárquica final: R² = .209, aj = .185, F(3, 99) = 8.72 (md2:399)
+PASSOU  hierárquica final: Anxiety -.481 [-.863; -.100] β -.319; Revise .246 [-.116; .608] β .172 (md2:405)
+PASSOU  hierárquica final: Gender B = 1.040 [-8.183; 10.262], β = .020, p = .823 (recodificado 0/1, md2:375; md2:405)
+PASSOU  hierárquica: β de Revise no degrau 2 = .400 (só consulta, md2:405)
+== Âncoras: Big Five (Vol. 1, cap. 6)
+PASSOU  Neuroticism × Extraversion: r = -.350 [-.425; -.271] (md1:459)
+PASSOU  Neuroticism × Extraversion: ρ = -.325 [-.402; -.245] (md1:459; IC de Fisher como o JASP)
+PASSOU  Extraversion × Agreeableness: r = .05, p = .223; ρ = .06, p = .166 (md1:467)
+== Âncoras: Titanic (Vol. 3, caps. 11 e 12)
+PASSOU  logística: N = 756, 557 excluídos (md3:183)
+PASSOU  logística: deviance nula 1025.57, modelo 695.14, χ²(4) = 330.43 (md3:83)
+PASSOU  logística: Nagelkerke .477, Tjur .394 (md3:85)
+PASSOU  logística: Age B = -.039, z = -5.14, OR = .962 [.947; .976] (md3:89)
+PASSOU  logística: 2nd OR = .275 [.165; .457]; 3rd OR = .080 [.047; .138] (md3:89)
+PASSOU  logística: male z = -13.06, OR = .072 [.048; .107]; inverso 13.9 (md3:89)
+PASSOU  logística: matriz de confusão 372/71 e 91/222 no corte .5 (md3:103)
+PASSOU  logística: acurácia .786 vs taxa base .586; sensibilidade .709; especificidade .840; AUC .853 (md3:103; md3:195)
+PASSOU  logística: 3 casas por padrão nas frases, como md3:183: OR = 0.275, IC 95% [0.165, 0.457]; OR = 0.072
+PASSOU  logística: frase APA traduz OR < 1 em % menor (72.5% para 2nd), nunca "vezes menos" (md3:119)
+PASSOU  logística: célula vazia de PClass tratada como ausente (sem categoria fantasma)
+PASSOU  2×2: χ²(1) = 332.06 lido sem correção; Yates 329.84 ao lado (md3:262; md3:449)
+PASSOU  2×2: φ = -.503 (sinal do JASP), magnitude .50 (md3:264; md3:449)
+PASSOU  2×2: OR homens/mulheres = 0.100 [0.077; 0.130] como o JASP (md3:449)
+PASSOU  2×2: OR mulheres/homens = 9.99 [7.67; 13.01] como o livro (md3:266)
+PASSOU  2×2: chances 2.000 e 0.200, probabilidades 66.7% e 16.7%; menor esperada 158.34 (md3:262-266)
+PASSOU  2×2: correção do erro md3:296 (0,200 é a chance dos homens; o OR é 0,100, 90% menor)
+PASSOU  2×2: φ com IC bilateral igual ao effectsize::phi (sinal do JASP preservado) e na frase: φ = .503, IC 95% [
+== Âncoras: Health Habits (Vol. 3, cap. 12)
+PASSOU  3×3: χ²(4) = 14.15, p = .007 (md3:273)
+PASSOU  3×3: V de Cramér = .077; V·√2 = .109 para comparar às faixas (md3:273; md3:279)
+PASSOU  3×3: resíduos ajustados Low/Low +3.45 e Low/High -2.99; demais dentro de |1.96| (md3:281)
+PASSOU  3×3: menor esperada 26.82 (md3:228)
+PASSOU  3×3: V = .077 com 3 casas e IC bilateral (= effectsize::cramers_v) na frase (md3:358)
+PASSOU  aderência: χ²(2) = 358.07, esperado 394.67 por categoria; observados 108/443/633 (md3:218)
+== Verdade conhecida (dados simulados, semente 2026)
+PASSOU  correlação populacional .50: IC de r contém .50; ρ de Spearman perto de .483 (tol .03)
+PASSOU  transformação monotônica (exp): ρ inalterado, Pearson cai e a divergência é avisada (limiar .05)
+PASSOU  variável independente: |r| < .06 e magnitude desprezível
+PASSOU  parcial: a e b só compartilham z: bivariada ≈ .50, parcial ≈ 0 (|r| < .08)
+PASSOU  regressão: B recuperados (2, -1, +1 e -1 para as indicadoras de g3) dentro do IC
+PASSOU  regressão: fator de 3 níveis vira 2 indicadoras contra a referência 'a', sem β
+PASSOU  regressão: referencias = list(g3 = "c") troca a referência sem mudar o modelo
+PASSOU  heterocedasticidade plantada: Breusch-Pagan p < .001 e aviso para EP robusto
+PASSOU  outlier plantado: 1 caso com |z| > 3 e Cook > 1
+PASSOU  logística: OR verdadeiros 2 (x) e 3 (trat vs ctrl) dentro do IC de Wald
+PASSOU  logística: logito linear não é acusado pelo Box-Tidwell (p > .01)
+PASSOU  logística: logito linear em ln(x), não em x, é acusado pelo Box-Tidwell (p < .001)
+PASSOU  logística: separação completa é avisada
+PASSOU  logística: evento por rótulo de texto e erro claro para desfecho com 3 categorias
+PASSOU  ROC: AUC próxima da teórica Φ(1/√2) = .760
+PASSOU  ROC: maior_indica_evento = FALSE com escore invertido dá a mesma AUC
+PASSOU  ROC: J de Youden é o máximo da varredura de todos os cortes
+PASSOU  McNemar: proporção sobe (.30 → ~.59) e o teste detecta (p < .001)
+PASSOU  Q de Cochran: mudança plantada detectada; pos vs fu (sem mudança plantada na média) p ajustado > .05
+== Equivalência com outras implementações
+PASSOU  Pearson e Spearman iguais ao cor.test (estimativa, p, IC do Pearson)
+PASSOU  Kendall: τ e p iguais ao cor.test; IC de Hollander-Wolfe confere com o cálculo direto
+PASSOU  ponto-bisserial: t equivalente = t de Student do t.test(var.equal = TRUE)
+PASSOU  parcial: igual ao ppcor e à correlação entre resíduos
+PASSOU  correlações dependentes: âncora do curso (N = 390, r = -.653 vs -.719, r23 = .518): |z| = 2.057, p = .040
+PASSOU  correlações dependentes: Steiger (1980) e Meng et al. (1992) iguais ao cocor
+PASSOU  correlações independentes: z de Fisher e IC de Zou iguais ao cocor
+PASSOU  regressão: B, EP, p e R² iguais ao lm(); VIF igual ao car::vif
+PASSOU  regressão: VIF de fator com 3 níveis = GVIF^(1/gl) do car
+PASSOU  regressão: Durbin-Watson igual ao car e p ao lmtest::dwtest bilateral; Breusch-Pagan igual ao lmtest
+PASSOU  regressão: EP HC3 igual ao sandwich::vcovHC
+PASSOU  regressão: Mahalanobis igual ao mahalanobis() sobre os preditores
+PASSOU  hierárquica: F de mudança = anova(m1, m2) de dois modelos (não o anova de três)
+PASSOU  logística: B igual ao glm; IC Wald = confint.default; IC por perfil = confint
+PASSOU  logística: pseudo-R² de McFadden, Cox-Snell, Nagelkerke e Tjur iguais ao performance
+PASSOU  ROC: AUC = U de Mann-Whitney/(n1·n0) e IC = pROC::ci.auc (DeLong)
+PASSOU  qui-quadrado: χ², p e resíduos iguais ao chisq.test(correct = FALSE); Yates igual ao padrão do R
+PASSOU  qui-quadrado: V de Cramér igual ao effectsize::cramers_v(adjust = FALSE)
+PASSOU  qui-quadrado: esperadas pequenas levam ao Fisher exato (troca visível) e o p = fisher.test
+PASSOU  qui-quadrado r×c com esperadas pequenas: Fisher exato do R e semente sem efeito colateral na sessão
+PASSOU  aderência: igual ao chisq.test com proporções informadas
+PASSOU  McNemar: sem e com correção iguais ao mcnemar.test; exato = binom.test
+PASSOU  Q de Cochran: igual ao rstatix::cochran_qtest
+PASSOU  Q de Cochran: Σz² do pós-hoc tipo SPSS = k·Q/2 (identidade que os números do curso também cumprem: 53.2 = 3 × 35.471/2)
+PASSOU  Q de Cochran com 2 medidas = McNemar sem correção
+== Regressões dos achados de revisão (CoVe v1.1)
+PASSOU  B2 aderência: categoria com contagem 0 fica no teste: χ²(3) = 11.07, p = .011 (= chisq.test)
+PASSOU  B3 ROC: desfecho de texto sem evento dá erro que pede evento (não escolhe pela ordem alfabética)
+PASSOU  B3 ROC: fator usa o 2º nível como evento, igual à regressao_logistica
+PASSOU  B3 ROC: evento invertido (AUC < .5) gera aviso e nenhuma frase de corte com ±Inf
+PASSOU  B4 Cochran: pós-hoc respeita decimal = "," (separador "; ") e idioma = "en" ("adjusted p")
+PASSOU  B6 Kendall: rótulo próprio (decisão diferente do Pearson = "divergiu") e aviso
+PASSOU  B7 referencias aceita vetor nomeado c(g3 = "c") igual à lista; nome desconhecido dá erro claro
+PASSOU  B8 McNemar e Cochran: fator usa o 2º nível como evento (não o alfabético); texto sem evento pede evento
+PASSOU  B9 separação: frase APA diz "OR não estimável" (Firth) e não imprime OR absurdo nem pseudo-R²
+PASSOU  B11 casas adaptativas: B = -8.9e-06 sai com algarismos significativos, não 0.000
+PASSOU  célula pequena: qui_quadrado avisa para não publicar cruzamento demográfico com células < 5
+== Formatação e privacidade
+PASSOU  idioma = "en": rótulo 95% CI e frase em inglês
+PASSOU  nenhuma tabela impressa tem uma linha por participante
+== Correções da verificação final (achados G e H)
+PASSOU  G-03 escolaridade 1/2/3 sem fatores: entra com 1 coeficiente linear e $avisos manda declarar fatores = "escolaridade" (livro, md2:335)
+PASSOU  G-03 com fatores = "escolaridade": 2 indicadoras contra o código 1, B iguais ao lm(factor()) (tol 1e-10), 2 vs 1 = 2.786 (G-03) e sem o aviso
+PASSOU  G-03 hierárquica com fatores: F de mudança do bloco escolaridade = anova(lm(idade), lm(factor + idade)), F(2, 146) = 18.10 (G-03)
+PASSOU  G-03 fatores respeita referencias (= relevel do lm); referência de numérica sem fatores e fatores fora dos preditores dão erro claro
+PASSOU  G-03 logística: aviso sem fatores; com fatores, B iguais ao glm(factor()) (tol 1e-8)
+PASSOU  G-03 sem aviso para preditor contínuo de verdade (idade, ~40 valores) nem para 0/1; fronteiras da regra: 3 e 7 inteiros avisam, 2, 8 e valores com decimais não
+PASSOU  G-04 correlacoes(idioma = "en"): magnitude em inglês na frase e na tabela (r = cor(), rótulo por Cohen)
+PASSOU  G-04 âncora: Anxiety × Exam em inglês, "moderate in magnitude", r(101) = -.441 (md2:73; md2:145)
+PASSOU  G-13 célula zero: frase traz OR = 73.667 = (6.5/1.5)/(0.5/8.5) e diz que é corrigido (Haldane) e que o observado seria infinito; $decisoes também
+PASSOU  G-11 hierárquica com idioma = "en" e blocos sem nome: "(block 1)", nada de "bloco"
+PASSOU  G-11 aderência decide com alfa = 1 − nivel: p = .015 (= exp(−8.4/2)) difere com nivel .95 e não difere com nivel .99
+PASSOU  H-01 ponto-bisserial com grupo de n = 1: o print não mostra o escore (97.531), a tabela de grupos vai em tabelas_extra com coluna n e $avisos registra
+PASSOU  H-06 R² ajustado, ΔR² e f² sem IC: nota "não calculado" em $decisoes da linear e da hierárquica (também em inglês)
+PASSOU  H-07 nível de fator com n = 1: erro claro com o nome da categoria (não "missing value where TRUE/FALSE needed")
+PASSOU  H-07 diagnóstico com caso de alavanca 1 não quebra: proporção |z| > 2,5 = mean(|rstandard| > 2,5, na.rm = TRUE)
+PASSOU  H-08 associacao.md: célula do zero à esquerda do β diz "mantido (como a base, est_comum.R)" e est_comum.R põe β entre os com zero
+== Equivalência da correlação e aviso de não significativo (v1.3)
+PASSOU  A-01 correlacoes() com r = 0: aviso cita Greenland et al. (2016) e aponta teste_equivalencia(tipo = "correlacao")
+PASSOU  A-02 correlacoes() com associação forte (x e w): sem o aviso
+PASSOU  A-03 com três variáveis, o aviso lista só os pares não significativos
+PASSOU  A-03b r numericamente zero (1e-17) sai como .000, sem dezenas de casas na frase e no aviso
+PASSOU  A-04 TOST da correlação = TOSTER::z_cor_test (z de Fisher, Lakens, 2017, eq. 8): p, z do limite decisivo e IC 90%
+PASSOU  A-05 verdade conhecida: rho = 0 com n = 2000 e limites ±0,1 dá equivalência; com n = 30 o IC 90% é mais largo que os limites
+PASSOU  A-06 qui-quadrado não significativo: aviso sem TOST (a skill não tem equivalência para V ou φ)
+PASSOU  A-07 textos novos sem travessão nem palavras vetadas
+== v1.4: ROC com prevalência e custo; viés preditivo de Cleary
+PASSOU  ROC: VPP e VPN por Bayes na prevalência da amostra = contagens da tabela 2 x 2 nos cortes informados (tol. 1e-12)
+PASSOU  ROC: VPP na prevalência de 5% = Se·π / [Se·π + (1 − Sp)(1 − π)] e RV+ = Se / (1 − Sp)
+PASSOU  ROC: corte ponderado por custo = máximo de Se + r·Sp, r = (1 − π)/(custo·π), em força bruta sobre os cortes do pROC
+PASSOU  ROC sem prevalência: decisão pede prevalencia para a população de uso; prevalência fora de (0, 1) para
+PASSOU  Cleary: sem viés simulado -> sem evidência; intercepto deslocado -> interceptos; inclinação diferente -> inclinações
+PASSOU  Cleary: F das três etapas = anova() entre os modelos aninhados à mão (tol. 1e-10)
+PASSOU  Cleary: retas por grupo iguais ao lm em cada grupo; resíduo médio da reta comum soma zero ponderado por n
+
+== Resumo
+141 de 141 testes passaram em 5 s

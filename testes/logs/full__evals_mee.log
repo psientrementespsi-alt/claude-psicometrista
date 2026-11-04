@@ -1,0 +1,30 @@
+== mee (modelo estrutural com efeito indireto)
+PASSOU  estimativas iguais à chamada direta do lavaan (tol. 1e-8)
+PASSOU  caminhos padronizados recuperam a população (a = .5, b = .4, c = .1; tol. .08)
+PASSOU  efeito indireto padronizado = produto a × b padronizados (tol. 1e-8)
+PASSOU  bootstrap: IC percentil contém a estimativa e difere do IC delta
+PASSOU  bootstrap reproduzível com a mesma semente
+PASSOU  itens com 4 categorias: WLSMV com parametrização theta escolhido sozinho
+PASSOU  sem regressão no modelo: erro com orientação para ajustar_afc()
+== mee_multigrupo (moderação categórica)
+PASSOU  igualar as regressões piora o ajuste quando um caminho difere entre grupos (p < .001)
+PASSOU  teste por caminho aponta Y ~ X e não Y ~ W
+PASSOU  medida invariante na simulação: passos métrico e escalar sem piora (p > .01)
+PASSOU  igualar_latentes = TRUE acrescenta o passo das latentes (rota das aulas)
+== interacao_latente (indicadores-produto, centralização residual)
+PASSOU  interação simulada (b = .25) detectada com p < .001 e ΔR² > 0
+PASSOU  igual ao código das aulas (indProd residualC + sem ML com std.lv), tol. 1e-8
+PASSOU  inclinações simples crescem com o moderador
+PASSOU  sem interação na população: p > .01
+== curva_crescimento (lavaan::growth)
+PASSOU  recupera médias (2; 0,5) e variâncias (1; 0,09) da população (tol. .1)
+PASSOU  resíduos iguais = modelo misto com intercepto e inclinação aleatórios (lmer ML; tol. 1e-3)
+PASSOU  base latente: cargas livres a menos de 2 EP de 2 e 3 (crescimento linear simulado)
+PASSOU  base latente com resíduos adjacentes em 4 ondas: modelo saturado avisado
+PASSOU  igual ao modelo da aula (growth MLR, cargas 0:4) com o mesmo banco
+== invariancia_longitudinal
+PASSOU  dados invariantes: nenhum passo marcado como falha
+PASSOU  intercepto deslocado na onda 2: o passo escalar falha
+PASSOU  resíduos do mesmo item correlacionados entre ondas no modelo configural
+
+evals_mee: 23/23 passaram

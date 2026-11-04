@@ -1,0 +1,216 @@
+== Âncoras: Directed Reading Activities (Vol. 4, cap. 13)
+PASSOU  Student t(42) = -2,267, p = ,029 (md4:107; tol .0005)
+PASSOU  Welch t = -2,311, gl = 37,86, p = ,026 (md4:107; tol .0005/.005)
+PASSOU  d = -0,684, IC 95% [-1,290; -0,071] (md4:107; tol .0005)
+PASSOU  Levene F(1, 42) = 2,362, p = ,132: o do livro é o centrado na média (md4:107; tol .0005)
+PASSOU  Levene centrado na mediana (padrão do painel t do JASP) dá 2,342: não é o valor do livro
+PASSOU  Shapiro-Wilk dos resíduos W = 0,973, p = ,396 (md4:107; tol .0005)
+PASSOU  Shapiro-Wilk por grupo: Treat W = 0,966, p = ,652; Control W = 0,972, p = ,732 (md4:562)
+PASSOU  Treat M = 51,48, DP = 11,01 (n 21); Control M = 41,52, DP = 17,15 (n 23) (md4:111; tol .005)
+PASSOU  diferença 9,95, IC 95% [1,09; 18,82] em módulo (md4:115; tol .005)
+PASSOU  rota clássica escolhe Student (Levene p = ,132) e rota welch escolhe Welch
+PASSOU  frase APA completa do Directed Reading (texto exato)
+PASSOU  frase APA com t(42) = 2.27, p = .029 e d = 0.68 (efeito moderado, md4:117)
+PASSOU  G-05 unilateral oposto no Directed Reading: H1 declarada, t(42) = -2.27, p = .986, diferença Control - Treat = -9.95 (md4:107, md4:115)
+PASSOU  G-11 decisões do t com decimal = ',': 'Levene F(1; 42) = 2,36; p = ,132' e 'a outra versão dá F = 2,34; p = ,133' (md4:107)
+== Âncoras: Weight Gain (Vol. 4, cap. 13)
+PASSOU  t(15) = 10,84 (o JASP mostra -10,84: ordem antes - depois), p < ,001 (md4:123; tol .005)
+PASSOU  IC 95% da diferença [8,36; 12,46] e diferença média 10,41 (md4:127; tol .005)
+PASSOU  d_z = 2,710, IC 95% [1,623; 3,778] (o d da tela, sinal trocado; md4:123; tol .0005)
+PASSOU  d principal na métrica original = 0,47 (Caixa 13.2, md4:235; tol .005)
+PASSOU  d_rm ('Correct for correlation' do JASP) = 0,45, diferente do 0,47 do livro
+PASSOU  Shapiro-Wilk da diferença W = 0,938, p = ,325 (md4:123; tol .0005)
+PASSOU  antes M = 144,64, DP = 22,70; depois M = 155,05, DP = 21,44; diferença DP = 3,84; r = ,99 (md4:125, md4:129; tol .005)
+PASSOU  frase APA completa do Weight Gain com decimal = ',' (texto exato; M = 155,05 como o JASP arredonda)
+PASSOU  frase APA com M = 155,05 (arredondamento do JASP), t(15) = 10,84 e d = 0,47 (pequeno, próximo do moderado; md4:125-129)
+== Âncoras: Response to Eye Color (Vol. 4, cap. 14)
+PASSOU  F(3, 218) = 2,894, p = ,036, SQ fator = 24,42, SQ resíduo ≈ 613 (md4:337; tol .0005/.005/.5)
+PASSOU  ω² = 0,025 (principal) e η²p = 0,038 (md4:337; tol .0005)
+PASSOU  Levene F(3, 218) = 0,519, p = ,670 (md4:337; tol .0005)
+PASSOU  Tukey Down-Green: dif = -0,752, t = -2,321, p aj = ,096, d = -0,449 (md4:345; tol .0005)
+PASSOU  Tukey Blue-Green: dif = -0,666, t = -2,376, p aj = ,085, d = -0,397 (md4:345; tol .0005)
+PASSOU  demais pares com p ajustado > ,36 (md4:345)
+PASSOU  g de Hedges par a par ,46 e ,39 (o g que o corpo cita, md4:347; tol .005)
+PASSOU  médias Blue 3,19, Brown 3,72, Down 3,11, Green 3,86; n 67/37/41/77 (md4:339; tol .005)
+PASSOU  frase APA: F(3, 218) = 2.89, p = .036, ω² = .025 (md4:459)
+== Âncoras: Stroop, bloco Stroop (Vol. 4, cap. 14)
+Registered S3 method overwritten by 'lme4':
+  method           from
+  na.action.merMod car 
+PASSOU  Mauchly W = 0,670, χ²(2) = 6,803, p = ,033 (md4:355; tol .0005)
+PASSOU  ε GG = 0,752, HF = 0,806, LB = 0,500 (md4:355)
+PASSOU  sem correção F(2, 36) = 9,18, p < ,001 (md4:361)
+PASSOU  GG escolhido na fronteira (ε = ,752): F(1,504; 27,072) = 9,183, p = ,002 (md4:357, md4:361; tol .0005)
+PASSOU  η²p = 0,338 (principal) e ω² = 0,020 (md4:361; tol .0005)
+PASSOU  HF daria o mesmo p = ,002 (md4:479; tol .0005)
+PASSOU  Bonferroni N1-N2: dif = -29,158, t(18) = -4,639, p < ,001, d = -0,366 (md4:369; tol .0005)
+PASSOU  Bonferroni N1-N3: dif = -9,316, t = -1,703, p = ,317; N2-N3: 19,842, 2,284, ,104 (md4:369; tol .0005)
+PASSOU  d do corpo: ,35 na métrica original do par (d_par) e ≈ 1,06 o d bruto das diferenças (md4:373; tol .005)
+PASSOU  médias 440,42 / 469,58 / 449,74 ms (md4:365; tol .005)
+PASSOU  frase APA com F(1,50; 27,07) = 9,18 e p = ,002 (md4:363)
+PASSOU  G-11 frase da RM com decimal = ',': 'W = ,67; χ²(2) = 6,80; p = ,033' (md4:355)
+== Âncoras: Viagra, ANCOVA (Vol. 5, cap. 15)
+PASSOU  covariável F(1, 26) = 4,959, p = ,035; ω²p = 0,117 e η²p = 0,160 (md5:77; tol .0005)
+PASSOU  dose F(2, 26) = 4,142, p = ,027; ω²p = 0,173 (principal) e η²p = 0,242 (md5:77; tol .0005)
+PASSOU  não parciais da dose (não reportar): η² = 0,211, ω² = 0,156 (md5:608; tol .0005)
+PASSOU  Levene da VD bruta F(2, 27) = 0,71, p = ,500 (md5:49; tol .005/.0005)
+PASSOU  Levene dos resíduos (painel do JASP) F(2, 27) = 4,618, p = ,019 (md5:53; tol .0005)
+PASSOU  Shapiro-Wilk dos resíduos W = ,94, p = ,111 (md5:53; tol .005/.0005)
+PASSOU  médias brutas 3,22/4,88/4,85 e ajustadas 2,926/4,712/5,151 (md5:87, md5:97)
+PASSOU  libido do parceiro média 3,44 no placebo e 2,00 na dose alta (md5:87; tol .005)
+PASSOU  Placebo-Baixa: dif = -1,786, d = -1,024, p Bonferroni = ,136, IC não ajustado [-3,53; -0,04] (md5:97, md5:99)
+PASSOU  Placebo-Alta: dif = -2,225, d = -1,276, p = ,031, IC [-3,88; -0,57]; Baixa-Alta: -0,439, d = -0,252, p = 1,000, IC [-2,11; 1,23]
+PASSOU  inclinações: dose × parceiro F(2, 24) = 4,18, p = ,028 e aviso de violação (md5:176)
+PASSOU  inclinações por grupo 0,76/0,82/-0,22 e r = ,88/,97/-,17 (md5:176; tol .005)
+PASSOU  frase APA: F(1, 26) = 4.96, p = .035, ω²p = .117 e F(2, 26) = 4.14, p = .027, ω²p = .173 (md5:162)
+PASSOU  G-11 ANCOVA com decimal = ',': inclinações 'F(2; 24) = 4,18; p = ,028' (md5:176) e decisões 'ω² = ,156; η² = ,211' (md5:608)
+== Âncoras: Viagra, MANOVA (Vol. 5, cap. 17)
+PASSOU  Pillai V = 0,349, F(4, 54) = 2,854, p = ,032 (principal; md5:410; tol .0005)
+PASSOU  Wilks Λ = 0,661, F(4, 52) = 2,985, p = ,027 (md5:410; tol .0005)
+PASSOU  Hotelling-Lawley 0,496, F = 3,101, gl 50,00, p = ,023 (aproximação da tela do JASP; md5:608; tol .0005)
+PASSOU  Roy 0,462, F(2, 27) = 6,235, p = ,006 (md5:410; tol .0005)
+PASSOU  M de Box χ²(6) = 26,34, p < ,001 (md5:378; tol .005)
+PASSOU  Shapiro-Wilk multivariado W = 0,955, p = ,200 (o teste do JASP; md5:608; tol .0005)
+PASSOU  Henze-Zirkler dos resíduos HZ = 0,920, p = ,023: rejeita, como conclui o livro (md5:376, md5:608; o 14,459 não se reproduz; tol .0005)
+PASSOU  frase APA do Viagra abre por Box p < .001 com o critério declarado (md5:481)
+PASSOU  ANCOVA do Viagra sem bootstrap: Levene dos resíduos acusa e o aviso sugere bootstrap = TRUE com 1000 reamostragens (md5:184)
+PASSOU  univariadas: libido F(2, 27) = 2,416, p = ,108, η²p = ,15; parceiro F = 1,979, p = ,158, η²p = ,13 (md5:414-416)
+PASSOU  efeito multivariado ≈ ,17 = V/s (md5:410; tol .005)
+PASSOU  um fator: SQ Tipo I (o do JASP) e Tipo III coincidem
+PASSOU  frase APA: Box p < .001, Pillai V = .35, F(4, 54) = 2.85, p = .032 (md5:481)
+== Âncoras: Heart Rate, ANOVA fatorial (Vol. 5, cap. 16)
+PASSOU  F: Gender 185,980; Group 695,647; interação 7,409 com p = ,007 (md5:240; tol .0005)
+PASSOU  ω²p (principal) ,188/,465/,008 e η²p ,189/,466/,009 (md5:240; tol .0005)
+PASSOU  Levene F(3, 796) = 5,56, p < ,001 (md5:214; tol .005)
+PASSOU  Shapiro-Wilk dos resíduos W = ,998, p = ,338 e R² = 0,53 (md5:214, md5:244)
+PASSOU  médias: corredores 109,98, sedentários 139,00, mulheres 131,99, homens 116,99 (md5:244; tol .005)
+PASSOU  células 148,00 / 115,99 / 130,00 / 103,98 (md5:250; tol .005)
+PASSOU  efeito simples mulheres: 32,02, t(796) = 20,57, IC [28,96; 35,07], d = 2,06 (md5:332; tol .005)
+PASSOU  efeito simples homens: 26,03, t = 16,73, IC [22,97; 29,08], d = 1,67 (md5:332; tol .005)
+PASSOU  sexo nos sedentários: H - M = -18,00, t = -11,57, IC [-21,05; -14,95], d = -1,16 (sinal invertido: aqui M - H; md5:332)
+PASSOU  sexo nos corredores: H - M = -12,01, t = -7,72, IC [-15,06; -8,96], d = -0,77 (md5:332; tol .005)
+PASSOU  frase APA abre pela interação: F(1, 796) = 7.41, p = .007, ω²p = .008 (md5:318)
+== Simulados: testes t e não paramétricos
+PASSOU  t independente: d verdadeiro 0,5 recuperado (|d - 0,5| < ,17, IC contém 0,5)
+PASSOU  variâncias 1 vs 16: Levene acusa, rota clássica vai para Welch e o d principal é o de Welch
+PASSOU  desbalanceamento NÃO dispara aviso de g (erro do livro md4:231 não reproduzido); gl < 20 dispara o aviso de amostra pequena
+PASSOU  indice = 'g' torna o g de Hedges principal e menor que o d em módulo
+PASSOU  pareado: d na métrica original ≈ 5/10 e d_z bem maior (r alto)
+PASSOU  pareado: casos incompletos saem por listwise e são contados
+PASSOU  uma amostra: diferença e IC centrados em M - mu
+PASSOU  teste t com 3 grupos para com mensagem que aponta anova_um_fator()
+PASSOU  Mann-Whitney: A (média maior) tem r_rb positivo no sinal direcional e negativo no sinal do JASP 0.95.1
+== Simulados: ANOVA de um fator
+PASSOU  médias iguais (semente 11): ômnibus sem significância e pós-hoc não roda
+PASSOU  exigir_omnibus = FALSE roda o pós-hoc assim mesmo
+PASSOU  grupo c deslocado 1,2 DP: Tukey acusa a-c e b-c e não a-b
+PASSOU  variâncias muito desiguais: Levene acusa, linha de Welch e Games-Howell
+== Simulados: medidas repetidas e mista
+PASSOU  simetria composta (esfericidade verdadeira): Mauchly sem evidência e nenhuma correção
+PASSOU  ε de GG igual à fórmula de Box a partir da covariância dos contrastes ortonormais
+PASSOU  variâncias das diferenças muito desiguais: Mauchly acusa e a correção é aplicada (gl fracionários)
+PASSOU  esfericidade = 'epsilon' corrige mesmo sem Mauchly significativo
+PASSOU  mista: interação grupo × tempo significativa e efeitos simples com Bonferroni sobre o conjunto
+PASSOU  mista: Levene por tempo e M de Box presentes nos pressupostos
+PASSOU  mista: η²p é o principal
+== Simulados: fatorial, ANCOVA, MANOVA, Kruskal-Wallis, Friedman
+PASSOU  fatorial desbalanceado: efeito de A detectado, B e A × B sem efeito; sem efeitos simples
+PASSOU  ANCOVA: diferença ajustada t2 - c ≈ 1 (verdade 1; tol .35) e inclinações homogêneas
+PASSOU  ANCOVA com grupos aleatorizados declarados não emite o aviso de Miller & Chapman
+PASSOU  ANCOVA com inclinações heterogêneas: teste acusa e aviso aparece
+PASSOU  bootstrap da ANCOVA: mesma semente, mesmo IC; IC contém a estimativa
+PASSOU  bootstrap não altera o gerador de números aleatórios do usuário
+PASSOU  MANOVA: efeito em y1 detectado pelo Pillai e pela univariada de y1, não pela de y2
+PASSOU  Kruskal-Wallis: grupo c deslocado; Dunn (Holm) acusa a-c e b-c, não a-b
+PASSOU  Kruskal-Wallis: Holm nunca dá p maior que Bonferroni
+PASSOU  Friedman: t1 diferente de t2 e t3; t2 e t3 iguais (Conover, Holm)
+== Equivalências
+PASSOU  Levene (média e mediana) = car::leveneTest
+PASSOU  d de Cohen e IC (Student) = effectsize::cohens_d; g = effectsize::hedges_g
+PASSOU  d de Welch (média das variâncias) = effectsize::cohens_d(pooled_sd = FALSE) no ponto
+PASSOU  d na métrica original, d_av, d_rm e d_z do pareado = fórmulas fechadas; IC do principal = effectsize 'av'
+PASSOU  r_rb de Mann-Whitney e IC = effectsize::rank_biserial (mesmo sinal no modo direcional)
+PASSOU  r_rb pareada e IC = effectsize::rank_biserial(paired = TRUE)
+PASSOU  r_rb pareada exclui diferenças nulas (fórmula do JASP: 2V/maxw - 1, maxw sobre as não nulas)
+PASSOU  Mann-Whitney com empates segue a regra do JASP 0.95.1 (normal com correção), não o p exato condicional do R 4.6
+PASSOU  Wilcoxon pareado com zeros: V e p como no R 4.5/JASP (zeros fora antes de ranquear)
+PASSOU  ANOVA de um fator = car::Anova(type = 3) e Welch = oneway.test
+PASSOU  Brown-Forsythe F* = onewaytests::bf.test
+PASSOU  Games-Howell = rstatix::games_howell_test (diferença, IC e p; o rstatix subtrai 2º - 1º)
+PASSOU  fatorial desbalanceado Tipo III = car::Anova(lm, type = 3); Tipo II = car::Anova(type = 2)
+PASSOU  ω²p e η²p da fatorial = effectsize sobre a tabela car (bilateral)
+PASSOU  medidas repetidas = afex::aov_car (F, gl corrigidos por GG, p)
+PASSOU  ω² de medidas repetidas (fórmula do JASP) = effectsize::omega_squared(afex) no Stroop simulado
+PASSOU  MANOVA com 2 fatores: Tipo III = car::Manova(type = 3); Tipo I = summary.manova
+PASSOU  M de Box = heplots::boxM
+PASSOU  Kruskal-Wallis: H = kruskal.test; ε²_R = effectsize::rank_epsilon_squared; η²_H = (H - k + 1)/(N - k)
+PASSOU  Dunn = rstatix::dunn_test (|z| e p Holm; correção de empates)
+PASSOU  Friedman: χ² = friedman.test; W = rstatix::friedman_effsize
+PASSOU  Conover = PMCMRplus::frdAllPairsConoverTest (t e p sem ajuste)
+== Regressões da revisão CoVe v1.1
+PASSOU  MANOVA 2 grupos × 3 VDs (tipo 1): valor, F, gl e p das 4 estatísticas = summary.manova
+PASSOU  MANOVA 3 grupos × 4 VDs (tipo 1): valor, F, gl e p das 4 estatísticas = summary.manova
+PASSOU  MANOVA 2 grupos × 3 VDs (tipo 3): valor, F, gl e p das 4 estatísticas = car::Manova
+PASSOU  MANOVA 3 grupos × 4 VDs (tipo 3): valor, F, gl e p das 4 estatísticas = car::Manova
+PASSOU  MANOVA 2 grupos × 3 VDs: Pillai = car::Manova (F(3, 36) = 0.79, p = .508) e a frase não declara efeito
+PASSOU  nivel = .90: todos os IC da frase rotulados 90% (t, pareado, um fator, Mann-Whitney, Kruskal-Wallis)
+PASSOU  Wilcoxon pareado com zeros e sem empates: p normal com correção = R 4.5.1/JASP 0.95.1 (,0330), não exato
+PASSOU  Wilcoxon pareado exato = TRUE = wilcox.test(exact = TRUE) do R instalado (no R 4.6: V = 62, zeros nos postos)
+PASSOU  Wilcoxon de uma amostra com valores iguais a mu: p = R 4.5.1 (,236)
+PASSOU  fatorial com interação: posthoc = 'nenhum' não calcula efeitos simples nem os põe na frase
+PASSOU  fatorial com interação: posthoc = 'holm' aplica Holm ao conjunto de efeitos simples
+PASSOU  unilateral: frase com '∞' e 'unilateral', sem 'Inf' (t independente, pareado, uma amostra)
+PASSOU  unilateral: IC do r_rb unilateral = effectsize::rank_biserial(alternative = 'less'/'greater')
+PASSOU  privacidade: Mann-Whitney e Kruskal-Wallis param com grupo de 1 caso
+PASSOU  privacidade: descritivas com n < 5 saem sem estatísticas no print (Kruskal-Wallis e mista)
+PASSOU  ANCOVA com 2 covariáveis: inclinação por grupo é a parcial (lm com as duas covariáveis) e a leitura diz 'parciais'
+PASSOU  M de Box com .001 <= p < .05: pressupostos e frase usam o mesmo critério (p < .001) sem contradição
+PASSOU  pós-hoc de um fator com grupos desbalanceados: a frase usa d_qme (não troca para g por desbalanceamento)
+PASSOU  g par a par fica NA (não -Inf) quando os dois grupos não variam
+PASSOU  Henze-Zirkler = MVN::hz (estatística e p)
+== Regressões da revisão CoVe final (achados H-02, G-01, G-05, G-07, G-11)
+PASSOU  H-02 t independente com grupo de 2 casos: nem o print nem $apa trazem M, DP ou escores; frase sem M e DP nos dois grupos; $avisos registra
+PASSOU  H-02 Mann-Whitney com grupo de 2 casos: sem Md do grupo na frase nem no print; $avisos registra
+PASSOU  H-02 ANCOVA com grupo de 2 casos: média ajustada do grupo fora da frase
+PASSOU  H-02 pareado, Wilcoxon pareado e uma amostra com n = 4: frase sem M, DP nem Md (10.90, 12.80, 1.16, 1.40, 10.75, 13.05)
+PASSOU  H-02 regra não muda frase com grupos de 5 ou mais (s1, 300 por grupo: M e DP presentes, sem aviso)
+PASSOU  G-01 rota Welch: aviso de contradição (Welch significativo, ω² clássico com IC que inclui zero) e nota em $decisoes
+PASSOU  G-01 ω² aproximado pelo F de Welch = (F - 1)gl1/(F·gl1 + gl2 + 1) = effectsize::omega_squared(oneway.test(var.equal = FALSE)) (,157)
+PASSOU  G-01 frase da rota Welch declara a origem do ω² e traz o aproximado pelo F de Welch
+PASSOU  G-01 rota clássica sem mudança: duas linhas em $efeito e nenhum aviso de Welch (s5)
+PASSOU  G-05 t independente unilateral oposto: H1 declarada, t com o sinal de $tabela, 'no sentido oposto ao de H1'
+PASSOU  G-05 pareado unilateral oposto (H1: diminuição; dados aumentam): t positivo de pos - pre e direção declarada
+PASSOU  G-05 Mann-Whitney, Wilcoxon pareado e uma amostra unilaterais opostos: H1 declarada e marca de sentido oposto
+PASSOU  G-05 bilateral sem mudança: nenhuma frase cita H1
+PASSOU  G-07 Levene degenerado com 2 casos por grupo: sem F absurdo, rota Welch, motivo em $decisoes e $avisos, sem aviso do R
+PASSOU  G-07 Levene com variância zero num grupo (n = 6) ou com grupo de 2 casos na ANOVA: não decide a rota
+PASSOU  G-07 VD constante (geral ou dentro de todos os grupos) para com mensagem clara, não com erro cru do R
+PASSOU  G-11 ANCOVA simulada com inclinações heterogêneas e decimal = ',': '; p = ,' na frase das inclinações
+PASSOU  G-11 frases com decimal = ',': pós-hoc sem par significativo 'p = ,077; 1 - 2' (cenário do G-01) e Mauchly da RM simulada com '; p '
+PASSOU  G-11 leituras de pressupostos com decimal = ',': Mauchly 'ε GG = 0,xxx; HF = ...' e inclinações da ANCOVA 'c: 0,xx; t1: ...'
+PASSOU  G-11 decisões do t, do pareado e da ANOVA com decimal = ',': sem '0.' nem ', p = '
+PASSOU  textos novos (avisos, decisões e frases dos achados G e H) sem travessão nem palavras vetadas
+== Equivalência (TOST) e aviso de não significativo (v1.3)
+PULADO  equivalência com TOSTER (pacote ausente; está em .ee_pacotes_evals)
+== Equivalência: verdade conhecida
+PASSOU  E-07 diferença real 0, n = 500 por grupo, limites ±0,3: equivalente e não diferente de zero
+PASSOU  E-08 diferença real 0,5 com limites ±0,2: diferente de zero e não equivalente
+PASSOU  E-09 diferença real 0,1 com n = 5000 por grupo e limites ±0,3: diferente de zero, mas dentro dos limites
+PASSOU  E-10 n = 10 por grupo e limites ±0,2: IC 90% mais largo que os limites gera aviso e resultado indeterminado sem frase de igualdade
+PASSOU  E-11 sem limites a função para e pede o menor efeito de interesse
+PASSOU  E-12 frase em inglês e decimal = ','
+== Aviso de não significativo
+PASSOU  E-13 t independente não significativo: aviso cita Greenland et al. (2016) e aponta teste_equivalencia(tipo = "independente")
+PASSOU  E-14 t independente significativo: sem o aviso
+PASSOU  E-15 pareado e uma amostra apontam o tipo certo; Mann-Whitney diz que não há TOST para a estatística
+PASSOU  E-16 ANOVA fatorial: o aviso lista só os termos não significativos
+PASSOU  E-17 textos novos (TOST e aviso) sem travessão nem palavras vetadas
+== Formato e privacidade
+PASSOU  decimal = ',' gera p = ,036 e gl separados por ponto e vírgula
+PASSOU  idioma = 'en' gera frase em inglês
+PASSOU  nenhuma tabela impressa tem uma linha por participante
+PASSOU  frases APA sem números crus vazados (nenhum número com 6+ casas decimais)
+PASSOU  sem travessão longo nem palavras vetadas nos textos gerados
+
+== Resumo
+191 de 191 testes passaram em 8 s
