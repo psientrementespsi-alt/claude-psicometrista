@@ -1,5 +1,26 @@
 # Referências verificadas da skill
 
+## Sumário
+
+- 53 (linha 74)
+- 105 (linha 126)
+- 117 (linha 138)
+- 140 (linha 161)
+- 162 (linha 183)
+- 195 (linha 216)
+- 227 (linha 248)
+- 246 (linha 267)
+- 291 (linha 312)
+- 309 (linha 330)
+- 348 (linha 369)
+- 356 (linha 377)
+- 387 (linha 408)
+- 410 (linha 431)
+- 433 (linha 454)
+- 443 (linha 464)
+- 452 (linha 473)
+- 473 (linha 494)
+
 Índice: Psicometria e AFC · Invariância · TRI · Redes e EGA · Diferenças entre grupos · Associação e regressão · Processos · Modelos avançados · Poder e tamanho amostral · Construção de instrumentos · Relato · v1.5: módulos novos · Citadas sem DOI · Não verificadas
 
 Conferidas em 11/10/2026 (Faul et al., 2009, em 14/10/2026; as entradas da v1.3,

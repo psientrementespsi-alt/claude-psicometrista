@@ -1,5 +1,16 @@
 # Invariância de medida
 
+## Sumário
+
+- 16 (linha 27)
+- 70 (linha 81)
+- 108 (linha 119)
+- 124 (linha 135)
+- 152 (linha 163)
+- 174 (linha 185)
+- 183 (linha 194)
+- 191 (linha 202)
+
 Índice: Sequência · Critérios · Quando um passo falha · Invariância longitudinal · Comparação entre grupos sem invariância escalar · Viés de medida, DIF e viés preditivo
 
 Função: `invariancia(modelo, dados, itens, grupo, ordinal = NULL, estimador =

@@ -1,5 +1,15 @@
 # Fontes, decisões transversais e erros das fontes que a skill não reproduz
 
+## Sumário
+
+- 7 (linha 17)
+- 35 (linha 45)
+- 53 (linha 63)
+- 91 (linha 101)
+- 116 (linha 126)
+- 184 (linha 194)
+- 203 (linha 213)
+
 Índice: 1. Hierarquia das fontes · 2. Rotas: clássica e alternativa · 3. Descritivas,
 normalidade e atípicos · 4. Convenções de relato · 5. Erros das fontes não reproduzidos ·
 6. Onde a literatura discorda do livro · 7. Afirmações e o que elas exigem

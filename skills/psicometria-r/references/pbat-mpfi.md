@@ -1,5 +1,10 @@
 # PBAT e MPFI-24: o que cada um pede de uma validação
 
+## Sumário
+
+- 10 (linha 15)
+- 94 (linha 99)
+
 Índice: PBAT · MPFI-24
 
 O PBAT é o instrumento do mestrado planejado; o MPFI-24 fica aqui para análises

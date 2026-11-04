@@ -1,5 +1,18 @@
 # Poder e tamanho amostral (reproduzindo o G*Power 3.1)
 
+## Sumário
+
+- 11 (linha 24)
+- 52 (linha 65)
+- 94 (linha 107)
+- 119 (linha 132)
+- 153 (linha 166)
+- 164 (linha 177)
+- 174 (linha 187)
+- 205 (linha 218)
+- 249 (linha 262)
+- 294 (linha 307)
+
 Funções em `scripts/est_poder.R`; testes em `scripts/evals_poder.R` (108 testes na
 v1.4, cerca de 13 s). Todas devolvem `pr_resultado` (subclasse `pr_poder`, com impressão em lista).
 

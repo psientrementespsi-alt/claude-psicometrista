@@ -1,5 +1,17 @@
 # Construção e validação de instrumentos: validade de conteúdo e AFE
 
+## Sumário
+
+- 12 (linha 24)
+- 51 (linha 63)
+- 98 (linha 110)
+- 212 (linha 224)
+- 225 (linha 237)
+- 320 (linha 332)
+- 356 (linha 368)
+- 393 (linha 405)
+- 417 (linha 429)
+
 Funções em `scripts/est_construcao.R`; testes em `scripts/evals_construcao.R` (80
 testes na v1.4, 82 com `PR_DADOS_JASP` apontando para os dados do JASP; cerca de 60 s).
 Complementa a AFC de `scripts/psicometria.R` (auditoria, estimador, ajuste,

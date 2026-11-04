@@ -1,5 +1,13 @@
 # Pacote de resultados e relato APA 7
 
+## Sumário
+
+- 8 (linha 16)
+- 38 (linha 46)
+- 91 (linha 99)
+- 105 (linha 113)
+- 112 (linha 120)
+
 Índice: Conteúdo do pacote · Frases de resultado · Diferenças em relação ao modo PSICOMETRICO da fabrica-de-artigo · Referências de software · O que não entra no pacote
 
 O pacote é o que esta skill entrega para a fabrica-de-artigo (modo

@@ -1,5 +1,20 @@
 # TRI: ajuste, comparação de modelos e DIF
 
+## Sumário
+
+- 11 (linha 26)
+- 20 (linha 35)
+- 38 (linha 53)
+- 76 (linha 91)
+- 87 (linha 102)
+- 105 (linha 120)
+- 119 (linha 134)
+- 161 (linha 176)
+- 169 (linha 184)
+- 191 (linha 206)
+- 207 (linha 222)
+- 222 (linha 237)
+
 Funções em `scripts/est_tri.R` (mirt; Chalmers, 2012); testes em
 `scripts/evals_tri.R`. Todas devolvem `pr_resultado`.
 

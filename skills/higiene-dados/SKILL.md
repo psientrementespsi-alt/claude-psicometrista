@@ -27,6 +27,16 @@ Executa a sanitização técnica, a validação lógica, a triagem de respostas 
 
 ---
 
+## Economia de tokens
+
+1. Scripts de `scripts/` são executados com `source()`, nunca lidos como contexto. Para a assinatura de uma função, use `args(nome)` no R ou `grep -n "nome <- function" scripts/*.R`.
+2. Leia só a referência do módulo do pedido. Referência longa abre com sumário e números de linha: leia o sumário e depois só a seção necessária.
+3. Não releia arquivo já lido nesta conversa; reaproveite o que está no contexto.
+4. Saída do R enxuta: resumos e agregados, nunca objetos inteiros (o que também protege dado de participante).
+5. Todo cálculo, conferência ou tabela determinística sai de função da skill; não refazer conta à mão em tokens.
+6. Modo rápido, para exploração e iteração: só números e decisões, sem a verificação narrativa completa. Na entrega final, a verificação completa e o checklist da skill são obrigatórios.
+7. Modelo: execução mecânica (rodar script, formatar tabela) cabe num modelo leve; interpretação e decisão metodológica pedem o modelo mais forte. Em lote via API, Batch API (50% de desconto) e cache dos materiais relidos.
+
 ## O Pipeline de Higiene em 5 Fases
 
 ```

@@ -1,5 +1,20 @@
 # Associação: correlação, regressão e desfecho categórico (est_associacao.R)
 
+## Sumário
+
+- 12 (linha 27)
+- 30 (linha 45)
+- 53 (linha 68)
+- 100 (linha 115)
+- 142 (linha 157)
+- 157 (linha 172)
+- 189 (linha 204)
+- 213 (linha 228)
+- 226 (linha 241)
+- 262 (linha 277)
+- 275 (linha 290)
+- 296 (linha 311)
+
 Módulo de análises de associação da skill. Padrões seguem o livro do usuário (Biblioteca
 Análise de Dados, Vol. 1-3, JASP 0.95.1); a literatura entra como argumento ou ao lado.
 Testes: `scripts/evals_associacao.R` (134 testes; 54 usam os bancos do JASP e reproduzem o livro;

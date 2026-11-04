@@ -1,4 +1,14 @@
 # BLUEPRINTS DE CÓDIGO R E TEMPLATES DE ESCRITA APA 7
+
+## Sumário
+
+- 2 (linha 12)
+- 10 (linha 20)
+- 49 (linha 59)
+- 86 (linha 96)
+- 117 (linha 127)
+- 136 (linha 146)
+- 158 (linha 168)
 ## SCRIPTS DE GERAÇÃO TABULAR E FRASÁRIO PADRONIZADO PARA O CLAUDE
 
 **Destinatário:** Claude (Anthropic) / Agentes Redatores de Artigos Científicos  

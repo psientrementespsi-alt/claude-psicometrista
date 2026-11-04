@@ -1,5 +1,16 @@
 # Modelagem por equações estruturais além da AFC (est_mee.R, v1.5)
 
+## Sumário
+
+- 13 (linha 24)
+- 20 (linha 31)
+- 36 (linha 47)
+- 50 (linha 61)
+- 61 (linha 72)
+- 77 (linha 88)
+- 91 (linha 102)
+- 102 (linha 113)
+
 Fontes: cursos "Análise Fatorial e Modelagem por Equações Estruturais" (JASP), "MPLUS" e
 "R: Análise Fatorial e MEE" da pasta Psicometria-R (scripts `MEE_MRP.R`,
 `Moderação_categórica.R`, `Interação de Fatores Latentes.R`, `Sintaxe_MEE.Rmd`) e as

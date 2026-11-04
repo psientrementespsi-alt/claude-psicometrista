@@ -1,5 +1,22 @@
 # Redes psicométricas, EGA e comparação de redes
 
+## Sumário
+
+- 12 (linha 29)
+- 26 (linha 43)
+- 86 (linha 103)
+- 129 (linha 146)
+- 145 (linha 162)
+- 153 (linha 170)
+- 168 (linha 185)
+- 199 (linha 216)
+- 238 (linha 255)
+- 252 (linha 269)
+- 289 (linha 306)
+- 309 (linha 326)
+- 342 (linha 359)
+- 352 (linha 369)
+
 Índice: 1. Quando usar | 2. Estimar: `rede_psicometrica()` | 3. Precisão e estabilidade:
 `estabilidade_rede()` | 4. Ponte e previsibilidade | 5. Tamanho de amostra | 6. Como relatar |
 7. NCT | 8. EGA e bootEGA | 9. Boruta | 10. Rede não é modelo fatorial | 11. Armadilhas |

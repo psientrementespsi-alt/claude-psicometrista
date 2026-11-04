@@ -1,5 +1,15 @@
 # Manual de Síntese Sistemática: Higiene, Triagem e Tratamento de Dados em R
 
+## Sumário
+
+- 8 (linha 18)
+- 44 (linha 54)
+- 105 (linha 115)
+- 175 (linha 185)
+- 240 (linha 250)
+- 285 (linha 295)
+- 303 (linha 313)
+
 **Corpus Base:** 30 obras fundamentais (3 livros integrais de referência em R, 26 artigos metodológicos peer-reviewed e 1 resenha técnica) cruzadas com os 6 tratados de psicometria da pasta `livros-completos-md/`.  
 **Finalidade:** Fornecer a base teórica, as regras formais, os pontos de corte e os scripts reproduzíveis em R para a etapa pré-analítica, deixando o material 100% preparado para posterior adaptação pelo Claude na skill `psicometria-r`.
 

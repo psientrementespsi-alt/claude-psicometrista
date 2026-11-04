@@ -1,4 +1,12 @@
 # MANUAL SISTEMÁTICO DE RELATO ESTATÍSTICO SEGUNDO APA 7 E JARS-QUANT
+
+## Sumário
+
+- 2 (linha 10)
+- 16 (linha 24)
+- 34 (linha 42)
+- 50 (linha 58)
+- 149 (linha 157)
 ## NORMAS DE ESCRITA, TABELAS DE PUBLICAÇÃO E CONVENÇÕES METODOLÓGICAS
 
 **Autor/Organizador:** Antigravity AI Orchestrator  

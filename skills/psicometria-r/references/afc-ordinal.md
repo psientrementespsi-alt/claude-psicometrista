@@ -1,5 +1,16 @@
 # AFC com itens ordinais e quase contínuos
 
+## Sumário
+
+- 12 (linha 23)
+- 54 (linha 65)
+- 95 (linha 106)
+- 131 (linha 142)
+- 147 (linha 158)
+- 201 (linha 212)
+- 286 (linha 297)
+- 338 (linha 349)
+
 Índice: Escolha do estimador · Código · Índices de ajuste · Cargas e solução · Confiabilidade · Escore somado · Modelo bifator · Validade convergente e discriminante
 
 Funções: `auditar_itens()`, `sugerir_estimador()`, `ajustar_afc()`,

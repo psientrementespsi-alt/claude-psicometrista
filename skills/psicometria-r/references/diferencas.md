@@ -1,5 +1,23 @@
 # Diferenças: comparação de grupos e condições (est_diferencas.R)
 
+## Sumário
+
+- 13 (linha 31)
+- 35 (linha 53)
+- 65 (linha 83)
+- 112 (linha 130)
+- 135 (linha 153)
+- 162 (linha 180)
+- 184 (linha 202)
+- 197 (linha 215)
+- 216 (linha 234)
+- 232 (linha 250)
+- 242 (linha 260)
+- 249 (linha 267)
+- 260 (linha 278)
+- 314 (linha 332)
+- 322 (linha 340)
+
 Módulo de testes de diferença da skill. Padrões seguem o livro do usuário (Biblioteca
 Análise de Dados, Vol. 4 e 5, JASP 0.95.1); a literatura entra como argumento ou ao lado.
 Testes: `scripts/evals_diferencas.R` (197 testes; 82 com os bancos do livro, todas as âncoras

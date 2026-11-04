@@ -1,5 +1,13 @@
 # Vieses de resposta: aquiescência, desejabilidade social e escolha forçada
 
+## Sumário
+
+- 12 (linha 20)
+- 53 (linha 61)
+- 63 (linha 71)
+- 92 (linha 100)
+- 121 (linha 129)
+
 Funções em `scripts/est_vieses.R`; testes em `scripts/evals_vieses.R` e, para
 `controle_desejabilidade()` e `escolha_forcada()` (v1.5), em `scripts/evals_complementos.R`. Base: o
 módulo de controle de vieses do curso Psicometria Online Academy (aquiescência,

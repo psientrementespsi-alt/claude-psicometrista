@@ -1,5 +1,10 @@
 # Cruzamento Linha a Linha: Corpus de Higiene com a Skill `psicometria-r`
 
+## Sumário
+
+- 7 (linha 12)
+- 84 (linha 89)
+
 **Finalidade:** Mapear a intersecção exata entre os 30 textos do corpus de higiene e os arquivos estruturais da skill `psicometria-r` (`references/*.md` e scripts `est_*.R`), fornecendo a Claude o blueprint completo para a futura implementação, **sem alterar nenhum arquivo da skill nesta sessão**.
 
 ---

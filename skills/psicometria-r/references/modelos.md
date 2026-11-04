@@ -1,5 +1,20 @@
 # Modelos avançados: GLM, ordinal e multinomial, GEE, multinível e meta-análise
 
+## Sumário
+
+- 13 (linha 28)
+- 34 (linha 49)
+- 79 (linha 94)
+- 120 (linha 135)
+- 153 (linha 168)
+- 186 (linha 201)
+- 239 (linha 254)
+- 249 (linha 264)
+- 319 (linha 334)
+- 339 (linha 354)
+- 356 (linha 371)
+- 370 (linha 385)
+
 Funções em `scripts/est_modelos.R`; testes em `scripts/evals_modelos.R` (136 sem
 `PR_DADOS_JASP` na v1.5, com meta-análise em rede e extração de dados; cerca de 25 s). O livro do usuário não cobre estes modelos (o GEE aparece como
 "horizonte, fora do escopo" e). As regras vêm das notas do curso,

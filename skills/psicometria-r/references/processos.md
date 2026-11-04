@@ -1,5 +1,17 @@
 # Processos: moderação, mediação e processo condicional
 
+## Sumário
+
+- 18 (linha 30)
+- 36 (linha 48)
+- 86 (linha 98)
+- 125 (linha 137)
+- 161 (linha 173)
+- 183 (linha 195)
+- 196 (linha 208)
+- 228 (linha 240)
+- 237 (linha 249)
+
 Funções em `scripts/est_processos.R`; testes em `scripts/evals_processos.R`. Estimação por
 MQO e bootstrap percentílico próprio, no formato dos modelos do PROCESS (numeração de
 Hayes, 2022), sem usar a macro.

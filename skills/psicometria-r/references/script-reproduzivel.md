@@ -1,5 +1,13 @@
 # Script reproduzível
 
+## Sumário
+
+- 29 (linha 37)
+- 69 (linha 77)
+- 83 (linha 91)
+- 126 (linha 134)
+- 175 (linha 183)
+
 Movido do SKILL.md na v1.4 (o SKILL.md guarda o resumo e as regras). Conteúdo
 testado na v1.2; a v1.4 só trocou o número da versão no cabeçalho do script.
 
